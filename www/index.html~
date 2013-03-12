@@ -47,6 +47,10 @@
                     </div>
                 </div>
             </div>
+            <div data-theme="b" data-role="footer">
+                <h3>
+                </h3>
+            </div>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
     </body>
