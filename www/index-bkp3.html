@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=yes, initial-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script src="js/jquery-1.7.2.min.js">
+<!-- nada -->
+	
+</script>
+<script src="js/jquery.mobile-1.3.0.min.js">
+<!-- nada -->
+	
+</script>
+<title>Aprendizado Coletivo</title>
+</head>
+
+<body>
+
+	<div data-role="page" id="level-home">
+
+		<div data-role="header" data-theme="d">
+			<h1>Aprendizado Coletivo</h1>
+		</div>
+		<div data-role="content">
+
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Buscar vídeos...">
+				<li data-filtertext="Biologia"><a href="#level-category" point-to="Biologia" data-transition="slide">Biologia</a></li> 
+				<li data-filtertext="Física"><a href="#level-category" point-to="Física" data-transition="slide">Física</a></li>
+				<li data-filtertext="Geografia"><a href="#level-category" point-to="Geografia" data-transition="slide">Geografia</a></li>
+				<li data-filtertext="História"><a href="#level-category" point-to="História" data-transition="slide">História</a></li>
+				<li data-filtertext="Inglês"><a href="#level-category" point-to="Inglês" data-transition="slide">Inglês</a></li>
+				<li data-filtertext="Matemática"><a href="#level-category" point-to="Matemática" data-transition="slide">Matemática</a></li>
+				<li data-filtertext="Português"><a href="#level-category" point-to="Português" data-transition="slide">Português</a></li>
+				<li data-filtertext="Química"><a href="#level-category" point-to="Química" data-transition="slide">Química</a></li>
+				
+				<li data-filtertext="Biologia Bioquímica"><a href="#level-sub-category" point-to="Bioquímica" data-transition="slide">Bioquímica</a></li>
+				<li data-filtertext="Biologia Botânica"><a href="#level-sub-category" point-to="Botânica" data-transition="slide">Botânica</a></li>
+				<li data-filtertext="Biologia Citologia"><a href="#level-sub-category" point-to="Citologia" data-transition="slide">Citologia</a></li>
+				<li data-filtertext="Biologia Divisão Celular"><a href="#level-sub-category" point-to="Divisão Celular" data-transition="slide">Divisão Celular</a></li>
+				<li data-filtertext="Biologia Ecologia"><a href="#level-sub-category" point-to="Ecologia" data-transition="slide">Ecologia</a></li>
+				<li data-filtertext="Biologia Embriologia"><a href="#level-sub-category" point-to="Embriologia" data-transition="slide">Embriologia</a></li>
+				<li data-filtertext="Biologia Evolução"><a href="#level-sub-category" point-to="Evolução" data-transition="slide">Evolução</a></li>
+				<li data-filtertext="Biologia Fisiologia"><a href="#level-sub-category" point-to="Fisiologia" data-transition="slide">Fisiologia</a></li>
+				<li data-filtertext="Biologia Genética"><a href="#level-sub-category" point-to="Genética" data-transition="slide">Genética</a></li>
+				<li data-filtertext="Biologia Histologia"><a href="#level-sub-category" point-to="Histologia" data-transition="slide">Histologia</a></li>
+				<li data-filtertext="Biologia Metabolismo Celular"><a href="#level-sub-category" point-to="Metabolismo Celular" data-transition="slide">Metabolismo Celular</a></li>
+				<li data-filtertext="Biologia Reprodução e Ciclos de Vida"><a href="#level-sub-category" point-to="Reprodução e Ciclos de Vida" data-transition="slide">Reprodução e Ciclos de Vida</a></li>
+				<li data-filtertext="Biologia Sistemática"><a href="#level-sub-category" point-to="Sistemática" data-transition="slide">Sistemática</a></li>
+				<li data-filtertext="Biologia Zoologia"><a href="#level-sub-category" point-to="Zoologia" data-transition="slide">Zoologia</a></li>
+				<li data-filtertext="Física Calor"><a href="#level-sub-category" point-to="Calor" data-transition="slide">Calor</a></li>
+				<li data-filtertext="Física Cinemática Escalar"><a href="#level-sub-category" point-to="Cinemática Escalar" data-transition="slide">Cinemática Escalar</a></li>
+				<li data-filtertext="Física Cinemática Vetorial"><a href="#level-sub-category" point-to="Cinemática Vetorial" data-transition="slide">Cinemática Vetorial</a></li>
+				<li data-filtertext="Física Eletrodinâmica"><a href="#level-sub-category" point-to="Eletrodinâmica" data-transition="slide">Eletrodinâmica</a></li>
+				<li data-filtertext="Física Eletromagnetismo"><a href="#level-sub-category" point-to="Eletromagnetismo" data-transition="slide">Eletromagnetismo</a></li>
+				<li data-filtertext="Física Eletrostática"><a href="#level-sub-category" point-to="Eletrostática" data-transition="slide">Eletrostática</a></li>
+				<li data-filtertext="Física Estática"><a href="#level-sub-category" point-to="Estática" data-transition="slide">Estática</a></li>
+				<li data-filtertext="Física Física Básica"><a href="#level-sub-category" point-to="Física Básica" data-transition="slide">Física Básica</a></li>
+				<li data-filtertext="Física Física Moderna"><a href="#level-sub-category" point-to="Física Moderna" data-transition="slide">Física Moderna</a></li>
+				<li data-filtertext="Física Forças em Dinâmica"><a href="#level-sub-category" point-to="Forças em Dinâmica" data-transition="slide">Forças em Dinâmica</a></li>
+				<li data-filtertext="Física Gravitação Universal"><a href="#level-sub-category" point-to="Gravitação Universal" data-transition="slide">Gravitação Universal</a></li>
+				<li data-filtertext="Física Hidrodinâmica"><a href="#level-sub-category" point-to="Hidrodinâmica" data-transition="slide">Hidrodinâmica</a></li>
+				<li data-filtertext="Física Ondas"><a href="#level-sub-category" point-to="Ondas" data-transition="slide">Ondas</a></li>
+				<li data-filtertext="Física Óptica Geométrica"><a href="#level-sub-category" point-to="Óptica Geométrica" data-transition="slide">Óptica Geométrica</a></li>
+				<li data-filtertext="Física Princípios da Conservação"><a href="#level-sub-category" point-to="Princípios da Conservação" data-transition="slide">Princípios da Conservação</a></li>
+				<li data-filtertext="Física Termodinâmica"><a href="#level-sub-category" point-to="Termodinâmica" data-transition="slide">Termodinâmica</a></li>
+				<li data-filtertext="Física Termologia"><a href="#level-sub-category" point-to="Termologia" data-transition="slide">Termologia</a></li>
+				<li data-filtertext="Geografia Economia Mundial"><a href="#level-sub-category" point-to="Economia Mundial" data-transition="slide">Economia Mundial</a></li>
+				<li data-filtertext="Geografia Geografia Básica"><a href="#level-sub-category" point-to="Geografia Básica" data-transition="slide">Geografia Básica</a></li>
+				<li data-filtertext="Geografia Geografia Geral"><a href="#level-sub-category" point-to="Geografia Geral" data-transition="slide">Geografia Geral</a></li>
+				<li data-filtertext="Geografia Geopolítica"><a href="#level-sub-category" point-to="Geopolítica" data-transition="slide">Geopolítica</a></li>
+				<li data-filtertext="História Brasil"><a href="#level-sub-category" point-to="Brasil" data-transition="slide">Brasil</a></li>
+				<li data-filtertext="História Geral"><a href="#level-sub-category" point-to="Geral" data-transition="slide">Geral</a></li>
+				<li data-filtertext="Inglês GRAMMAR"><a href="#level-sub-category" point-to="GRAMMAR" data-transition="slide">GRAMMAR</a></li>
+				<li data-filtertext="Inglês Verb Tenses"><a href="#level-sub-category" point-to="Verb Tenses" data-transition="slide">Verb Tenses</a></li>
+				<li data-filtertext="Inglês Verbs"><a href="#level-sub-category" point-to="Verbs" data-transition="slide">Verbs</a></li>
+				<li data-filtertext="Inglês Word"><a href="#level-sub-category" point-to="Word" data-transition="slide">Word</a></li>
+				<li data-filtertext="Matemática Álgebra"><a href="#level-sub-category" point-to="Álgebra" data-transition="slide">Álgebra</a></li>
+				<li data-filtertext="Matemática Estatística"><a href="#level-sub-category" point-to="Estatística" data-transition="slide">Estatística</a></li>
+				<li data-filtertext="Matemática Geometria analítica"><a href="#level-sub-category" point-to="Geometria analítica" data-transition="slide">Geometria analítica</a></li>
+				<li data-filtertext="Matemática Geometria Espacial"><a href="#level-sub-category" point-to="Geometria Espacial" data-transition="slide">Geometria Espacial</a></li>
+				<li data-filtertext="Matemática Geometria Plana"><a href="#level-sub-category" point-to="Geometria Plana" data-transition="slide">Geometria Plana</a></li>
+				<li data-filtertext="Matemática Matemática Financeira"><a href="#level-sub-category" point-to="Matemática Financeira" data-transition="slide">Matemática Financeira</a></li>
+				<li data-filtertext="Matemática Trigonometria"><a href="#level-sub-category" point-to="Trigonometria" data-transition="slide">Trigonometria</a></li>
+				<li data-filtertext="Português Gramática"><a href="#level-sub-category" point-to="Gramática" data-transition="slide">Gramática</a></li>
+				<li data-filtertext="Português Literatura"><a href="#level-sub-category" point-to="Literatura" data-transition="slide">Literatura</a></li>
+				<li data-filtertext="Português Redação"><a href="#level-sub-category" point-to="Redação" data-transition="slide">Redação</a></li>
+				<li data-filtertext="Português Sintaxe"><a href="#level-sub-category" point-to="Sintaxe" data-transition="slide">Sintaxe</a></li>
+				<li data-filtertext="Química Eletroquímica"><a href="#level-sub-category" point-to="Eletroquímica" data-transition="slide">Eletroquímica</a></li>
+				<li data-filtertext="Química Físico-química"><a href="#level-sub-category" point-to="Físico-química" data-transition="slide">Físico-química</a></li>
+				<li data-filtertext="Química Química básica"><a href="#level-sub-category" point-to="Química básica" data-transition="slide">Química básica</a></li>
+				<li data-filtertext="Química Química geral"><a href="#level-sub-category" point-to="Química geral" data-transition="slide">Química geral</a></li>
+				<li data-filtertext="Química Química orgânica"><a href="#level-sub-category" point-to="Química orgânica" data-transition="slide">Química orgânica</a></li>
+									
+				<li data-filtertext="Biologia Bioquímica Substâncias inorgânicas"><a href="#level-video" point-to="Substâncias inorgânicas" data-transition="slide">Substâncias inorgânicas</a></li>
+				<li data-filtertext="Biologia Bioquímica Substâncias orgânicas"><a href="#level-video" point-to="Substâncias orgânicas" data-transition="slide">Substâncias orgânicas</a></li>
+				<li data-filtertext="Biologia Botânica Evolução do grupo das plantas"><a href="#level-video" point-to="Evolução do grupo das plantas" data-transition="slide">Evolução do grupo das plantas</a></li>
+				<li data-filtertext="Biologia Botânica Briófitas"><a href="#level-video" point-to="Briófitas" data-transition="slide">Briófitas</a></li>
+				<li data-filtertext="Biologia Botânica Pteridófitas"><a href="#level-video" point-to="Pteridófitas" data-transition="slide">Pteridófitas</a></li>
+				<li data-filtertext="Biologia Botânica Gimnospermas"><a href="#level-video" point-to="Gimnospermas" data-transition="slide">Gimnospermas</a></li>
+				<li data-filtertext="Biologia Botânica Angiospermas"><a href="#level-video" point-to="Angiospermas" data-transition="slide">Angiospermas</a></li>
+				<li data-filtertext="Biologia Citologia Envoltórios Celulares"><a href="#level-video" point-to="Envoltórios Celulares" data-transition="slide">Envoltórios Celulares</a></li>
+				<li data-filtertext="Biologia Citologia Citoplasma"><a href="#level-video" point-to="Citoplasma" data-transition="slide">Citoplasma</a></li>
+				<li data-filtertext="Biologia Citologia Núcleo e Cromossomos"><a href="#level-video" point-to="Núcleo e Cromossomos" data-transition="slide">Núcleo e Cromossomos</a></li>
+				<li data-filtertext="Biologia Citologia Controle Gênico"><a href="#level-video" point-to="Controle Gênico" data-transition="slide">Controle Gênico</a></li>
+				<li data-filtertext="Biologia Divisão Celular Meiose"><a href="#level-video" point-to="Meiose" data-transition="slide">Meiose</a></li>
+				<li data-filtertext="Biologia Divisão Celular Mitose"><a href="#level-video" point-to="Mitose" data-transition="slide">Mitose</a></li>
+				<li data-filtertext="Biologia Ecologia Dinâmica das populações"><a href="#level-video" point-to="Dinâmica das populações" data-transition="slide">Dinâmica das populações</a></li>
+				<li data-filtertext="Biologia Ecologia Relações ecológicas"><a href="#level-video" point-to="Relações ecológicas" data-transition="slide">Relações ecológicas</a></li>
+				<li data-filtertext="Biologia Ecologia Sucessão ecológica"><a href="#level-video" point-to="Sucessão ecológica" data-transition="slide">Sucessão ecológica</a></li>
+				<li data-filtertext="Biologia Ecologia Biomas"><a href="#level-video" point-to="Biomas" data-transition="slide">Biomas</a></li>
+				<li data-filtertext="Biologia Embriologia Desenvolvimento embrionário"><a href="#level-video" point-to="Desenvolvimento embrionário" data-transition="slide">Desenvolvimento embrionário</a></li>
+				<li data-filtertext="Biologia Embriologia Formação de tecidos e órgãos"><a href="#level-video" point-to="Formação de tecidos e órgãos" data-transition="slide">Formação de tecidos e órgãos</a></li>
+				<li data-filtertext="Biologia Embriologia Desenvolvimento embrionário humano"><a href="#level-video" point-to="Desenvolvimento embrionário humano" data-transition="slide">Desenvolvimento embrionário humano</a></li>
+				<li data-filtertext="Biologia Evolução Teoria moderna da evolução"><a href="#level-video" point-to="Teoria moderna da evolução" data-transition="slide">Teoria moderna da evolução</a></li>
+				<li data-filtertext="Biologia Evolução Origem das espécies"><a href="#level-video" point-to="Origem das espécies" data-transition="slide">Origem das espécies</a></li>
+				<li data-filtertext="Biologia Evolução Evolução humana"><a href="#level-video" point-to="Evolução humana" data-transition="slide">Evolução humana</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Digestório"><a href="#level-video" point-to="Sistema Digestório" data-transition="slide">Sistema Digestório</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Circulatório"><a href="#level-video" point-to="Sistema Circulatório" data-transition="slide">Sistema Circulatório</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Respiratório"><a href="#level-video" point-to="Sistema Respiratório" data-transition="slide">Sistema Respiratório</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Excretor"><a href="#level-video" point-to="Sistema Excretor" data-transition="slide">Sistema Excretor</a></li>
+				<li data-filtertext="Biologia Fisiologia Esqueleto e Musculatura"><a href="#level-video" point-to="Esqueleto e Musculatura" data-transition="slide">Esqueleto e Musculatura</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Nervoso"><a href="#level-video" point-to="Sistema Nervoso" data-transition="slide">Sistema Nervoso</a></li>
+				<li data-filtertext="Biologia Fisiologia Sistema Endócrino"><a href="#level-video" point-to="Sistema Endócrino" data-transition="slide">Sistema Endócrino</a></li>
+				<li data-filtertext="Biologia Genética Evolução da genética"><a href="#level-video" point-to="Evolução da genética" data-transition="slide">Evolução da genética</a></li>
+				<li data-filtertext="Biologia Genética Leis de Mendel"><a href="#level-video" point-to="Leis de Mendel" data-transition="slide">Leis de Mendel</a></li>
+				<li data-filtertext="Biologia Genética Mapeamento gênico"><a href="#level-video" point-to="Mapeamento gênico" data-transition="slide">Mapeamento gênico</a></li>
+				<li data-filtertext="Biologia Genética Herança e Sexo"><a href="#level-video" point-to="Herança e Sexo" data-transition="slide">Herança e Sexo</a></li>
+				<li data-filtertext="Biologia Genética Expressão gênica"><a href="#level-video" point-to="Expressão gênica" data-transition="slide">Expressão gênica</a></li>
+				<li data-filtertext="Biologia Genética Aplicação da genética"><a href="#level-video" point-to="Aplicação da genética" data-transition="slide">Aplicação da genética</a></li>
+				<li data-filtertext="Biologia Histologia Tecidos Epiteliais"><a href="#level-video" point-to="Tecidos Epiteliais" data-transition="slide">Tecidos Epiteliais</a></li>
+				<li data-filtertext="Biologia Histologia Tecidos Conjuntivos"><a href="#level-video" point-to="Tecidos Conjuntivos" data-transition="slide">Tecidos Conjuntivos</a></li>
+				<li data-filtertext="Biologia Histologia Tecido Sanguíneo"><a href="#level-video" point-to="Tecido Sanguíneo" data-transition="slide">Tecido Sanguíneo</a></li>
+				<li data-filtertext="Biologia Histologia Tecidos Musculares"><a href="#level-video" point-to="Tecidos Musculares" data-transition="slide">Tecidos Musculares</a></li>
+				<li data-filtertext="Biologia Histologia Tecido Nervoso"><a href="#level-video" point-to="Tecido Nervoso" data-transition="slide">Tecido Nervoso</a></li>
+				<li data-filtertext="Biologia Metabolismo Celular Respiração Celular"><a href="#level-video" point-to="Respiração Celular" data-transition="slide">Respiração Celular</a></li>
+				<li data-filtertext="Biologia Metabolismo Celular Fermentação"><a href="#level-video" point-to="Fermentação" data-transition="slide">Fermentação</a></li>
+				<li data-filtertext="Biologia Metabolismo Celular Fotossíntese"><a href="#level-video" point-to="Fotossíntese" data-transition="slide">Fotossíntese</a></li>
+				<li data-filtertext="Biologia Metabolismo Celular Quimiossíntese"><a href="#level-video" point-to="Quimiossíntese" data-transition="slide">Quimiossíntese</a></li>
+				<li data-filtertext="Biologia Reprodução e Ciclos de Vida Tipos de reprodução"><a href="#level-video" point-to="Tipos de reprodução" data-transition="slide">Tipos de reprodução</a></li>
+				<li data-filtertext="Biologia Reprodução e Ciclos de Vida Tipos de ciclo de vida"><a href="#level-video" point-to="Tipos de ciclo de vida" data-transition="slide">Tipos de ciclo de vida</a></li>
+				<li data-filtertext="Biologia Reprodução e Ciclos de Vida Reprodução humana"><a href="#level-video" point-to="Reprodução humana" data-transition="slide">Reprodução humana</a></li>
+				<li data-filtertext="Biologia Sistemática Classificação dos seres vivos"><a href="#level-video" point-to="Classificação dos seres vivos" data-transition="slide">Classificação dos seres vivos</a></li>
+				<li data-filtertext="Biologia Sistemática Reinos dos seres vivos"><a href="#level-video" point-to="Reinos dos seres vivos" data-transition="slide">Reinos dos seres vivos</a></li>
+				<li data-filtertext="Biologia Sistemática Vírus"><a href="#level-video" point-to="Vírus" data-transition="slide">Vírus</a></li>
+				<li data-filtertext="Biologia Sistemática Reino Monera"><a href="#level-video" point-to="Reino Monera" data-transition="slide">Reino Monera</a></li>
+				<li data-filtertext="Biologia Sistemática Reino Protista"><a href="#level-video" point-to="Reino Protista" data-transition="slide">Reino Protista</a></li>
+				<li data-filtertext="Biologia Sistemática Fungos"><a href="#level-video" point-to="Fungos" data-transition="slide">Fungos</a></li>
+				<li data-filtertext="Biologia Zoologia Evolução do grupos dos animais"><a href="#level-video" point-to="Evolução do grupos dos animais" data-transition="slide">Evolução do grupos dos animais</a></li>
+				<li data-filtertext="Biologia Zoologia Poríferos e Cnidários"><a href="#level-video" point-to="Poríferos e Cnidários" data-transition="slide">Poríferos e Cnidários</a></li>
+				<li data-filtertext="Biologia Zoologia Platelmintos e Nematelmintos"><a href="#level-video" point-to="Platelmintos e Nematelmintos" data-transition="slide">Platelmintos e Nematelmintos</a></li>
+				<li data-filtertext="Biologia Zoologia Moluscos e Anelídeos"><a href="#level-video" point-to="Moluscos e Anelídeos" data-transition="slide">Moluscos e Anelídeos</a></li>
+				<li data-filtertext="Biologia Zoologia Artrópodes"><a href="#level-video" point-to="Artrópodes" data-transition="slide">Artrópodes</a></li>
+				<li data-filtertext="Biologia Zoologia Equinodermos "><a href="#level-video" point-to="Equinodermos " data-transition="slide">Equinodermos </a></li>
+				<li data-filtertext="Biologia Zoologia Vertebrados"><a href="#level-video" point-to="Vertebrados" data-transition="slide">Vertebrados</a></li>
+				<li data-filtertext="Física Calor Calorimetria"><a href="#level-video" point-to="Calorimetria" data-transition="slide">Calorimetria</a></li>
+				<li data-filtertext="Física Calor Mudanças de fase"><a href="#level-video" point-to="Mudanças de fase" data-transition="slide">Mudanças de fase</a></li>
+				<li data-filtertext="Física Calor Os diagramas de fases"><a href="#level-video" point-to="Os diagramas de fases" data-transition="slide">Os diagramas de fases</a></li>
+				<li data-filtertext="Física Calor Propagação do calor"><a href="#level-video" point-to="Propagação do calor" data-transition="slide">Propagação do calor</a></li>
+				<li data-filtertext="Física Cinemática Escalar Movimento Uniforme"><a href="#level-video" point-to="Movimento Uniforme" data-transition="slide">Movimento Uniforme</a></li>
+				<li data-filtertext="Física Cinemática Escalar Movimento Uniformemente Variado"><a href="#level-video" point-to="Movimento Uniformemente Variado" data-transition="slide">Movimento Uniformemente Variado</a></li>
+				<li data-filtertext="Física Cinemática Escalar Movimento Vertical no Vácuo"><a href="#level-video" point-to="Movimento Vertical no Vácuo" data-transition="slide">Movimento Vertical no Vácuo</a></li>
+				<li data-filtertext="Física Cinemática Escalar Gráficos"><a href="#level-video" point-to="Gráficos" data-transition="slide">Gráficos</a></li>
+				<li data-filtertext="Física Cinemática Vetorial Velocidade e Aceleração Vetoriais"><a href="#level-video" point-to="Velocidade e Aceleração Vetoriais" data-transition="slide">Velocidade e Aceleração Vetoriais</a></li>
+				<li data-filtertext="Física Cinemática Vetorial Lançamento horizontal no vácuo"><a href="#level-video" point-to="Lançamento horizontal no vácuo" data-transition="slide">Lançamento horizontal no vácuo</a></li>
+				<li data-filtertext="Física Cinemática Vetorial Lançamento oblíquo no vácuo"><a href="#level-video" point-to="Lançamento oblíquo no vácuo" data-transition="slide">Lançamento oblíquo no vácuo</a></li>
+				<li data-filtertext="Física Cinemática Vetorial Movimentos circulares"><a href="#level-video" point-to="Movimentos circulares" data-transition="slide">Movimentos circulares</a></li>
+				<li data-filtertext="Física Eletrodinâmica Corrente Elétrica"><a href="#level-video" point-to="Corrente Elétrica" data-transition="slide">Corrente Elétrica</a></li>
+				<li data-filtertext="Física Eletrodinâmica Resistores"><a href="#level-video" point-to="Resistores" data-transition="slide">Resistores</a></li>
+				<li data-filtertext="Física Eletrodinâmica Associação de resistores"><a href="#level-video" point-to="Associação de resistores" data-transition="slide">Associação de resistores</a></li>
+				<li data-filtertext="Física Eletrodinâmica Medidas elétricas"><a href="#level-video" point-to="Medidas elétricas" data-transition="slide">Medidas elétricas</a></li>
+				<li data-filtertext="Física Eletrodinâmica Geradores elétricos"><a href="#level-video" point-to="Geradores elétricos" data-transition="slide">Geradores elétricos</a></li>
+				<li data-filtertext="Física Eletrodinâmica Receptores elétricos"><a href="#level-video" point-to="Receptores elétricos" data-transition="slide">Receptores elétricos</a></li>
+				<li data-filtertext="Física Eletrodinâmica As leis de Kirchhoff"><a href="#level-video" point-to="As leis de Kirchhoff" data-transition="slide">As leis de Kirchhoff</a></li>
+				<li data-filtertext="Física Eletrodinâmica Capacitores"><a href="#level-video" point-to="Capacitores" data-transition="slide">Capacitores</a></li>
+				<li data-filtertext="Física Eletromagnetismo Campo magnético"><a href="#level-video" point-to="Campo magnético" data-transition="slide">Campo magnético</a></li>
+				<li data-filtertext="Física Eletromagnetismo Força magnética"><a href="#level-video" point-to="Força magnética" data-transition="slide">Força magnética</a></li>
+				<li data-filtertext="Física Eletromagnetismo Indução eletromagnética"><a href="#level-video" point-to="Indução eletromagnética" data-transition="slide">Indução eletromagnética</a></li>
+				<li data-filtertext="Física Eletromagnetismo Ondas eletromagnéticas"><a href="#level-video" point-to="Ondas eletromagnéticas" data-transition="slide">Ondas eletromagnéticas</a></li>
+				<li data-filtertext="Física Eletrostática Eletrização"><a href="#level-video" point-to="Eletrização" data-transition="slide">Eletrização</a></li>
+				<li data-filtertext="Física Eletrostática Força Elétrica"><a href="#level-video" point-to="Força Elétrica" data-transition="slide">Força Elétrica</a></li>
+				<li data-filtertext="Física Eletrostática Campo elétrico"><a href="#level-video" point-to="Campo elétrico" data-transition="slide">Campo elétrico</a></li>
+				<li data-filtertext="Física Eletrostática Trabalho e potencial elétrico"><a href="#level-video" point-to="Trabalho e potencial elétrico" data-transition="slide">Trabalho e potencial elétrico</a></li>
+				<li data-filtertext="Física Eletrostática Condutores Eletrostáticos"><a href="#level-video" point-to="Condutores Eletrostáticos" data-transition="slide">Condutores Eletrostáticos</a></li>
+				<li data-filtertext="Física Eletrostática Capacitância Eletrostática"><a href="#level-video" point-to="Capacitância Eletrostática" data-transition="slide">Capacitância Eletrostática</a></li>
+				<li data-filtertext="Física Eletrostática CARGAS ELÉTRICAS EM MOVIMENTO"><a href="#level-video" point-to="CARGAS ELÉTRICAS EM MOVIMENTO" data-transition="slide">CARGAS ELÉTRICAS EM MOVIMENTO</a></li>
+				<li data-filtertext="Física Estática Equílibrio do Ponto Material"><a href="#level-video" point-to="Equílibrio do Ponto Material" data-transition="slide">Equílibrio do Ponto Material</a></li>
+				<li data-filtertext="Física Estática Equilíbrio dos corpos extensos"><a href="#level-video" point-to="Equilíbrio dos corpos extensos" data-transition="slide">Equilíbrio dos corpos extensos</a></li>
+				<li data-filtertext="Física Física Básica Introdução à Física"><a href="#level-video" point-to="Introdução à Física" data-transition="slide">Introdução à Física</a></li>
+				<li data-filtertext="Física Física Básica Introdução ao estudo dos movimentos"><a href="#level-video" point-to="Introdução ao estudo dos movimentos" data-transition="slide">Introdução ao estudo dos movimentos</a></li>
+				<li data-filtertext="Física Física Básica Vetores"><a href="#level-video" point-to="Vetores" data-transition="slide">Vetores</a></li>
+				<li data-filtertext="Física Física Básica Introdução à Termologia"><a href="#level-video" point-to="Introdução à Termologia" data-transition="slide">Introdução à Termologia</a></li>
+				<li data-filtertext="Física Física Básica Introdução a Ondas"><a href="#level-video" point-to="Introdução a Ondas" data-transition="slide">Introdução a Ondas</a></li>
+				<li data-filtertext="Física Física Básica Análise dimensional"><a href="#level-video" point-to="Análise dimensional" data-transition="slide">Análise dimensional</a></li>
+				<li data-filtertext="Física Física Moderna Relatividade especial"><a href="#level-video" point-to="Relatividade especial" data-transition="slide">Relatividade especial</a></li>
+				<li data-filtertext="Física Física Moderna Física Quântica"><a href="#level-video" point-to="Física Quântica" data-transition="slide">Física Quântica</a></li>
+				<li data-filtertext="Física Física Moderna Física Nuclear"><a href="#level-video" point-to="Física Nuclear" data-transition="slide">Física Nuclear</a></li>
+				<li data-filtertext="Física Forças em Dinâmica Princípios fundamentais da dinâmica"><a href="#level-video" point-to="Princípios fundamentais da dinâmica" data-transition="slide">Princípios fundamentais da dinâmica</a></li>
+				<li data-filtertext="Física Forças em Dinâmica Forças de atrito"><a href="#level-video" point-to="Forças de atrito" data-transition="slide">Forças de atrito</a></li>
+				<li data-filtertext="Física Forças em Dinâmica Forças em trajetórias curvilíneas"><a href="#level-video" point-to="Forças em trajetórias curvilíneas" data-transition="slide">Forças em trajetórias curvilíneas</a></li>
+				<li data-filtertext="Física Gravitação Universal A Gravitação Universal"><a href="#level-video" point-to="A Gravitação Universal" data-transition="slide">A Gravitação Universal</a></li>
+				<li data-filtertext="Física Hidrodinâmica Hidrodinâmica"><a href="#level-video" point-to="Hidrodinâmica" data-transition="slide">Hidrodinâmica</a></li>
+				<li data-filtertext="Física Hidrostática Hidrostática"><a href="#level-video" point-to="Hidrostática" data-transition="slide">Hidrostática</a></li>
+				<li data-filtertext="Física Ondas Movimento harmônico simples (MHS)"><a href="#level-video" point-to="Movimento harmônico simples (MHS)" data-transition="slide">Movimento harmônico simples (MHS)</a></li>
+				<li data-filtertext="Física Ondas Interferência de ondas"><a href="#level-video" point-to="Interferência de ondas" data-transition="slide">Interferência de ondas</a></li>
+				<li data-filtertext="Física Ondas As ondas sonoras"><a href="#level-video" point-to="As ondas sonoras" data-transition="slide">As ondas sonoras</a></li>
+				<li data-filtertext="Física Óptica Geométrica Introdução à Óptica Geométrica"><a href="#level-video" point-to="Introdução à Óptica Geométrica" data-transition="slide">Introdução à Óptica Geométrica</a></li>
+				<li data-filtertext="Física Óptica Geométrica Reflexão da Luz"><a href="#level-video" point-to="Reflexão da Luz" data-transition="slide">Reflexão da Luz</a></li>
+				<li data-filtertext="Física Óptica Geométrica Espelhos Planos"><a href="#level-video" point-to="Espelhos Planos" data-transition="slide">Espelhos Planos</a></li>
+				<li data-filtertext="Física Óptica Geométrica Espelhos Esféricos"><a href="#level-video" point-to="Espelhos Esféricos" data-transition="slide">Espelhos Esféricos</a></li>
+				<li data-filtertext="Física Óptica Geométrica Refração Luminosa"><a href="#level-video" point-to="Refração Luminosa" data-transition="slide">Refração Luminosa</a></li>
+				<li data-filtertext="Física Óptica Geométrica Lentes esféricas delgadas"><a href="#level-video" point-to="Lentes esféricas delgadas" data-transition="slide">Lentes esféricas delgadas</a></li>
+				<li data-filtertext="Física Óptica Geométrica Instrumentos ópticos"><a href="#level-video" point-to="Instrumentos ópticos" data-transition="slide">Instrumentos ópticos</a></li>
+				<li data-filtertext="Física Princípios da Conservação Trabalho"><a href="#level-video" point-to="Trabalho" data-transition="slide">Trabalho</a></li>
+				<li data-filtertext="Física Princípios da Conservação Energia"><a href="#level-video" point-to="Energia" data-transition="slide">Energia</a></li>
+				<li data-filtertext="Física Princípios da Conservação Impulso e quantidade de movimento"><a href="#level-video" point-to="Impulso e quantidade de movimento" data-transition="slide">Impulso e quantidade de movimento</a></li>
+				<li data-filtertext="Física Termodinâmica Estudo dos gases"><a href="#level-video" point-to="Estudo dos gases" data-transition="slide">Estudo dos gases</a></li>
+				<li data-filtertext="Física Termodinâmica As leis da Termodinâmica"><a href="#level-video" point-to="As leis da Termodinâmica" data-transition="slide">As leis da Termodinâmica</a></li>
+				<li data-filtertext="Física Termologia Termometria"><a href="#level-video" point-to="Termometria" data-transition="slide">Termometria</a></li>
+				<li data-filtertext="Física Termologia Dilatação Térmica de Sólidos e Líquidos"><a href="#level-video" point-to="Dilatação Térmica de Sólidos e Líquidos" data-transition="slide">Dilatação Térmica de Sólidos e Líquidos</a></li>
+				<li data-filtertext="Geografia Economia Mundial Agropecuária"><a href="#level-video" point-to="Agropecuária" data-transition="slide">Agropecuária</a></li>
+				<li data-filtertext="Geografia Economia Mundial Política Econômica"><a href="#level-video" point-to="Política Econômica" data-transition="slide">Política Econômica</a></li>
+				<li data-filtertext="Geografia Economia Mundial Indústria"><a href="#level-video" point-to="Indústria" data-transition="slide">Indústria</a></li>
+				<li data-filtertext="Geografia Economia Mundial Turismo"><a href="#level-video" point-to="Turismo" data-transition="slide">Turismo</a></li>
+				<li data-filtertext="Geografia Economia Mundial Transporte/Comunicação"><a href="#level-video" point-to="Transporte/Comunicação" data-transition="slide">Transporte/Comunicação</a></li>
+				<li data-filtertext="Geografia Economia Mundial Comércio/ Serviço"><a href="#level-video" point-to="Comércio/ Serviço" data-transition="slide">Comércio/ Serviço</a></li>
+				<li data-filtertext="Geografia Economia Mundial Globalização"><a href="#level-video" point-to="Globalização" data-transition="slide">Globalização</a></li>
+				<li data-filtertext="Geografia Geografia Básica Formas e Movimentos da Terra"><a href="#level-video" point-to="Formas e Movimentos da Terra" data-transition="slide">Formas e Movimentos da Terra</a></li>
+				<li data-filtertext="Geografia Geografia Básica Coordenadas Geográficas"><a href="#level-video" point-to="Coordenadas Geográficas" data-transition="slide">Coordenadas Geográficas</a></li>
+				<li data-filtertext="Geografia Geografia Básica Escalas"><a href="#level-video" point-to="Escalas" data-transition="slide">Escalas</a></li>
+				<li data-filtertext="Geografia Geografia Básica Fusos Horários"><a href="#level-video" point-to="Fusos Horários" data-transition="slide">Fusos Horários</a></li>
+				<li data-filtertext="Geografia Geografia Básica Projeções Cartográficas"><a href="#level-video" point-to="Projeções Cartográficas" data-transition="slide">Projeções Cartográficas</a></li>
+				<li data-filtertext="Geografia Geografia Básica Cartografia"><a href="#level-video" point-to="Cartografia" data-transition="slide">Cartografia</a></li>
+				<li data-filtertext="Geografia Geografia Geral Meio ambiente"><a href="#level-video" point-to="Meio ambiente" data-transition="slide">Meio ambiente</a></li>
+				<li data-filtertext="Geografia Geografia Geral Recursos Naturais"><a href="#level-video" point-to="Recursos Naturais" data-transition="slide">Recursos Naturais</a></li>
+				<li data-filtertext="Geografia Geografia Geral Demografia"><a href="#level-video" point-to="Demografia" data-transition="slide">Demografia</a></li>
+				<li data-filtertext="Geografia Geografia Geral Economia"><a href="#level-video" point-to="Economia" data-transition="slide">Economia</a></li>
+				<li data-filtertext="Geografia Geografia Geral Macro-Regiões"><a href="#level-video" point-to="Macro-Regiões" data-transition="slide">Macro-Regiões</a></li>
+				<li data-filtertext="Geografia Geografia Geral Complexos Regionais"><a href="#level-video" point-to="Complexos Regionais" data-transition="slide">Complexos Regionais</a></li>
+				<li data-filtertext="Geografia Geopolítica Ciência Geográfica"><a href="#level-video" point-to="Ciência Geográfica" data-transition="slide">Ciência Geográfica</a></li>
+				<li data-filtertext="Geografia Geopolítica África"><a href="#level-video" point-to="África" data-transition="slide">África</a></li>
+				<li data-filtertext="Geografia Geopolítica América do Sul"><a href="#level-video" point-to="América do Sul" data-transition="slide">América do Sul</a></li>
+				<li data-filtertext="Geografia Geopolítica América Central"><a href="#level-video" point-to="América Central" data-transition="slide">América Central</a></li>
+				<li data-filtertext="Geografia Geopolítica América do Norte"><a href="#level-video" point-to="América do Norte" data-transition="slide">América do Norte</a></li>
+				<li data-filtertext="Geografia Geopolítica Japão"><a href="#level-video" point-to="Japão" data-transition="slide">Japão</a></li>
+				<li data-filtertext="Geografia Geopolítica Oriente Médio"><a href="#level-video" point-to="Oriente Médio" data-transition="slide">Oriente Médio</a></li>
+				<li data-filtertext="Geografia Geopolítica China"><a href="#level-video" point-to="China" data-transition="slide">China</a></li>
+				<li data-filtertext="Geografia Geopolítica Sudeste Asiático"><a href="#level-video" point-to="Sudeste Asiático" data-transition="slide">Sudeste Asiático</a></li>
+				<li data-filtertext="Geografia Geopolítica Oceania"><a href="#level-video" point-to="Oceania" data-transition="slide">Oceania</a></li>
+				<li data-filtertext="Geografia Geopolítica Europa"><a href="#level-video" point-to="Europa" data-transition="slide">Europa</a></li>
+				<li data-filtertext="Geografia Geopolítica CEI"><a href="#level-video" point-to="CEI" data-transition="slide">CEI</a></li>
+				<li data-filtertext="Geografia Geopolítica Mundial"><a href="#level-video" point-to="Mundial" data-transition="slide">Mundial</a></li>
+				<li data-filtertext="Geografia Geopolítica Organismos Mundiais"><a href="#level-video" point-to="Organismos Mundiais" data-transition="slide">Organismos Mundiais</a></li>
+				<li data-filtertext="Geografia Geopolítica Antárdida"><a href="#level-video" point-to="Antárdida" data-transition="slide">Antárdida</a></li>
+				<li data-filtertext="História Brasil Primitivo"><a href="#level-video" point-to="Primitivo" data-transition="slide">Primitivo</a></li>
+				<li data-filtertext="História Brasil Brasil Colônia"><a href="#level-video" point-to="Brasil Colônia" data-transition="slide">Brasil Colônia</a></li>
+				<li data-filtertext="História Brasil Brasil Colônia (1530 – 1808)"><a href="#level-video" point-to="Brasil Colônia (1530 – 1808)" data-transition="slide">Brasil Colônia (1530 – 1808)</a></li>
+				<li data-filtertext="História Brasil Monarquia"><a href="#level-video" point-to="Monarquia" data-transition="slide">Monarquia</a></li>
+				<li data-filtertext="História Brasil Segundo Reinado"><a href="#level-video" point-to="Segundo Reinado" data-transition="slide">Segundo Reinado</a></li>
+				<li data-filtertext="História Brasil República Velha (1989 – 1930)"><a href="#level-video" point-to="República Velha (1989 – 1930)" data-transition="slide">República Velha (1989 – 1930)</a></li>
+				<li data-filtertext="História Brasil República do Café–com–Leite"><a href="#level-video" point-to="República do Café–com–Leite" data-transition="slide">República do Café–com–Leite</a></li>
+				<li data-filtertext="História Brasil Ditadura Militar (1964 – 1985)"><a href="#level-video" point-to="Ditadura Militar (1964 – 1985)" data-transition="slide">Ditadura Militar (1964 – 1985)</a></li>
+				<li data-filtertext="História Brasil Redemocratização"><a href="#level-video" point-to="Redemocratização" data-transition="slide">Redemocratização</a></li>
+				<li data-filtertext="História Brasil Brasil Atual"><a href="#level-video" point-to="Brasil Atual" data-transition="slide">Brasil Atual</a></li>
+				<li data-filtertext="História Brasil Regionalismos"><a href="#level-video" point-to="Regionalismos" data-transition="slide">Regionalismos</a></li>
+				<li data-filtertext="História Brasil Era Vargas"><a href="#level-video" point-to="Era Vargas" data-transition="slide">Era Vargas</a></li>
+				<li data-filtertext="História Geral Povos Asiáticos"><a href="#level-video" point-to="Povos Asiáticos" data-transition="slide">Povos Asiáticos</a></li>
+				<li data-filtertext="História Geral Povos Escravistas"><a href="#level-video" point-to="Povos Escravistas" data-transition="slide">Povos Escravistas</a></li>
+				<li data-filtertext="História Geral História Contemporânea"><a href="#level-video" point-to="História Contemporânea" data-transition="slide">História Contemporânea</a></li>
+				<li data-filtertext="História Geral História Medieval"><a href="#level-video" point-to="História Medieval" data-transition="slide">História Medieval</a></li>
+				<li data-filtertext="História Geral História Moderna"><a href="#level-video" point-to="História Moderna" data-transition="slide">História Moderna</a></li>
+				<li data-filtertext="História Geral História da América Anglo–Saxônica"><a href="#level-video" point-to="História da América Anglo–Saxônica" data-transition="slide">História da América Anglo–Saxônica</a></li>
+				<li data-filtertext="História Geral História da América Latina"><a href="#level-video" point-to="História da América Latina" data-transition="slide">História da América Latina</a></li>
+				<li data-filtertext="História Geral Pré–História"><a href="#level-video" point-to="Pré–História" data-transition="slide">Pré–História</a></li>
+				<li data-filtertext="História Geral História Antiga"><a href="#level-video" point-to="História Antiga" data-transition="slide">História Antiga</a></li>
+				<li data-filtertext="Inglês GRAMMAR Question Tag"><a href="#level-video" point-to="Question Tag" data-transition="slide">Question Tag</a></li>
+				<li data-filtertext="Inglês Verb Tenses Future Tense"><a href="#level-video" point-to="Future Tense" data-transition="slide">Future Tense</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Past Continuous"><a href="#level-video" point-to="The Past Continuous" data-transition="slide">The Past Continuous</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Past Perfect"><a href="#level-video" point-to="The Past Perfect" data-transition="slide">The Past Perfect</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Present Continuous"><a href="#level-video" point-to="The Present Continuous" data-transition="slide">The Present Continuous</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Present Perfect"><a href="#level-video" point-to="The Present Perfect" data-transition="slide">The Present Perfect</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Present Perfect continuous"><a href="#level-video" point-to="The Present Perfect continuous" data-transition="slide">The Present Perfect continuous</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Simple Past"><a href="#level-video" point-to="The Simple Past" data-transition="slide">The Simple Past</a></li>
+				<li data-filtertext="Inglês Verb Tenses The Simple Present Tense"><a href="#level-video" point-to="The Simple Present Tense" data-transition="slide">The Simple Present Tense</a></li>
+				<li data-filtertext="Inglês Verbs Addition to Remarks"><a href="#level-video" point-to="Addition to Remarks" data-transition="slide">Addition to Remarks</a></li>
+				<li data-filtertext="Inglês Verbs Conditional Sentences"><a href="#level-video" point-to="Conditional Sentences" data-transition="slide">Conditional Sentences</a></li>
+				<li data-filtertext="Inglês Verbs Direct Speech"><a href="#level-video" point-to="Direct Speech" data-transition="slide">Direct Speech</a></li>
+				<li data-filtertext="Inglês Verbs Indirect Speech"><a href="#level-video" point-to="Indirect Speech" data-transition="slide">Indirect Speech</a></li>
+				<li data-filtertext="Inglês Verbs Modals"><a href="#level-video" point-to="Modals" data-transition="slide">Modals</a></li>
+				<li data-filtertext="Inglês Verbs Auxiliary verbs"><a href="#level-video" point-to="Auxiliary verbs" data-transition="slide">Auxiliary verbs</a></li>
+				<li data-filtertext="Inglês Verbs The Gerund"><a href="#level-video" point-to="The Gerund" data-transition="slide">The Gerund</a></li>
+				<li data-filtertext="Inglês Verbs The Present Participle"><a href="#level-video" point-to="The Present Participle" data-transition="slide">The Present Participle</a></li>
+				<li data-filtertext="Inglês Verbs The Imperative Case"><a href="#level-video" point-to="The Imperative Case" data-transition="slide">The Imperative Case</a></li>
+				<li data-filtertext="Inglês Verbs The Infinitive"><a href="#level-video" point-to="The Infinitive" data-transition="slide">The Infinitive</a></li>
+				<li data-filtertext="Inglês Word Word Building"><a href="#level-video" point-to="Word Building" data-transition="slide">Word Building</a></li>
+				<li data-filtertext="Inglês Word Word Order"><a href="#level-video" point-to="Word Order" data-transition="slide">Word Order</a></li>
+				<li data-filtertext="Matemática Álgebra Conjuntos"><a href="#level-video" point-to="Conjuntos" data-transition="slide">Conjuntos</a></li>
+				<li data-filtertext="Matemática Álgebra Fundamentos de funções"><a href="#level-video" point-to="Fundamentos de funções" data-transition="slide">Fundamentos de funções</a></li>
+				<li data-filtertext="Matemática Álgebra Função afim"><a href="#level-video" point-to="Função afim" data-transition="slide">Função afim</a></li>
+				<li data-filtertext="Matemática Álgebra Função quadrática"><a href="#level-video" point-to="Função quadrática" data-transition="slide">Função quadrática</a></li>
+				<li data-filtertext="Matemática Álgebra Função modular"><a href="#level-video" point-to="Função modular" data-transition="slide">Função modular</a></li>
+				<li data-filtertext="Matemática Álgebra Função exponencial"><a href="#level-video" point-to="Função exponencial" data-transition="slide">Função exponencial</a></li>
+				<li data-filtertext="Matemática Álgebra Logaritmos"><a href="#level-video" point-to="Logaritmos" data-transition="slide">Logaritmos</a></li>
+				<li data-filtertext="Matemática Álgebra Função Logarítmica"><a href="#level-video" point-to="Função Logarítmica" data-transition="slide">Função Logarítmica</a></li>
+				<li data-filtertext="Matemática Álgebra Progressões"><a href="#level-video" point-to="Progressões" data-transition="slide">Progressões</a></li>
+				<li data-filtertext="Matemática Álgebra Matrizes"><a href="#level-video" point-to="Matrizes" data-transition="slide">Matrizes</a></li>
+				<li data-filtertext="Matemática Álgebra Determinantes"><a href="#level-video" point-to="Determinantes" data-transition="slide">Determinantes</a></li>
+				<li data-filtertext="Matemática Álgebra Sistemas lineares"><a href="#level-video" point-to="Sistemas lineares" data-transition="slide">Sistemas lineares</a></li>
+				<li data-filtertext="Matemática Álgebra Análise combinatória"><a href="#level-video" point-to="Análise combinatória" data-transition="slide">Análise combinatória</a></li>
+				<li data-filtertext="Matemática Álgebra Probabilidade"><a href="#level-video" point-to="Probabilidade" data-transition="slide">Probabilidade</a></li>
+				<li data-filtertext="Matemática Álgebra Binômio de Newton"><a href="#level-video" point-to="Binômio de Newton" data-transition="slide">Binômio de Newton</a></li>
+				<li data-filtertext="Matemática Álgebra Números complexos"><a href="#level-video" point-to="Números complexos" data-transition="slide">Números complexos</a></li>
+				<li data-filtertext="Matemática Álgebra Polinômios"><a href="#level-video" point-to="Polinômios" data-transition="slide">Polinômios</a></li>
+				<li data-filtertext="Matemática Álgebra Equações polinomiais"><a href="#level-video" point-to="Equações polinomiais" data-transition="slide">Equações polinomiais</a></li>
+				<li data-filtertext="Matemática Álgebra Matemática Básica"><a href="#level-video" point-to="Matemática Básica" data-transition="slide">Matemática Básica</a></li>
+				<li data-filtertext="Matemática Álgebra Outros"><a href="#level-video" point-to="Outros" data-transition="slide">Outros</a></li>
+				<li data-filtertext="Matemática Estatística Estatística"><a href="#level-video" point-to="Estatística" data-transition="slide">Estatística</a></li>
+				<li data-filtertext="Matemática Geometria analítica Ponto"><a href="#level-video" point-to="Ponto" data-transition="slide">Ponto</a></li>
+				<li data-filtertext="Matemática Geometria analítica Reta"><a href="#level-video" point-to="Reta" data-transition="slide">Reta</a></li>
+				<li data-filtertext="Matemática Geometria analítica Circunferência"><a href="#level-video" point-to="Circunferência" data-transition="slide">Circunferência</a></li>
+				<li data-filtertext="Matemática Geometria analítica Cônicas"><a href="#level-video" point-to="Cônicas" data-transition="slide">Cônicas</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Geometria espacial de posição"><a href="#level-video" point-to="Geometria espacial de posição" data-transition="slide">Geometria espacial de posição</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Poliédros"><a href="#level-video" point-to="Poliédros" data-transition="slide">Poliédros</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Prisma"><a href="#level-video" point-to="Prisma" data-transition="slide">Prisma</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Pirâmide"><a href="#level-video" point-to="Pirâmide" data-transition="slide">Pirâmide</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Cilíndro"><a href="#level-video" point-to="Cilíndro" data-transition="slide">Cilíndro</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Cone"><a href="#level-video" point-to="Cone" data-transition="slide">Cone</a></li>
+				<li data-filtertext="Matemática Geometria Espacial Esfera"><a href="#level-video" point-to="Esfera" data-transition="slide">Esfera</a></li>
+				<li data-filtertext="Matemática Geometria Plana Semelhança de triângulos"><a href="#level-video" point-to="Semelhança de triângulos" data-transition="slide">Semelhança de triângulos</a></li>
+				<li data-filtertext="Matemática Geometria Plana Resolução de triângulos"><a href="#level-video" point-to="Resolução de triângulos" data-transition="slide">Resolução de triângulos</a></li>
+				<li data-filtertext="Matemática Geometria Plana Áreas de superfícies planas"><a href="#level-video" point-to="Áreas de superfícies planas" data-transition="slide">Áreas de superfícies planas</a></li>
+				<li data-filtertext="Matemática Matemática Financeira Matemática financeira"><a href="#level-video" point-to="Matemática financeira" data-transition="slide">Matemática financeira</a></li>
+				<li data-filtertext="Matemática Trigonometria Trigonometria no triângulo retângulo"><a href="#level-video" point-to="Trigonometria no triângulo retângulo" data-transition="slide">Trigonometria no triângulo retângulo</a></li>
+				<li data-filtertext="Matemática Trigonometria Funções trigonométricas"><a href="#level-video" point-to="Funções trigonométricas" data-transition="slide">Funções trigonométricas</a></li>
+				<li data-filtertext="Matemática Trigonometria Relações entre funções trigonométricas"><a href="#level-video" point-to="Relações entre funções trigonométricas" data-transition="slide">Relações entre funções trigonométricas</a></li>
+				<li data-filtertext="Matemática Trigonometria Transformações trigonométricas"><a href="#level-video" point-to="Transformações trigonométricas" data-transition="slide">Transformações trigonométricas</a></li>
+				<li data-filtertext="Matemática Trigonometria Equações e inequações trigonométricas"><a href="#level-video" point-to="Equações e inequações trigonométricas" data-transition="slide">Equações e inequações trigonométricas</a></li>
+				<li data-filtertext="Português Gramática Linguagem"><a href="#level-video" point-to="Linguagem" data-transition="slide">Linguagem</a></li>
+				<li data-filtertext="Português Gramática Fonologia"><a href="#level-video" point-to="Fonologia" data-transition="slide">Fonologia</a></li>
+				<li data-filtertext="Português Gramática Ortografia"><a href="#level-video" point-to="Ortografia" data-transition="slide">Ortografia</a></li>
+				<li data-filtertext="Português Gramática Acentuação"><a href="#level-video" point-to="Acentuação" data-transition="slide">Acentuação</a></li>
+				<li data-filtertext="Português Gramática Morfologia"><a href="#level-video" point-to="Morfologia" data-transition="slide">Morfologia</a></li>
+				<li data-filtertext="Português Literatura Generos Literários"><a href="#level-video" point-to="Generos Literários" data-transition="slide">Generos Literários</a></li>
+				<li data-filtertext="Português Literatura Literatura Brasileira"><a href="#level-video" point-to="Literatura Brasileira" data-transition="slide">Literatura Brasileira</a></li>
+				<li data-filtertext="Português Literatura Literatura Portuguesa"><a href="#level-video" point-to="Literatura Portuguesa" data-transition="slide">Literatura Portuguesa</a></li>
+				<li data-filtertext="Português Redação Redação"><a href="#level-video" point-to="Redação" data-transition="slide">Redação</a></li>
+				<li data-filtertext="Português Sintáxe Frase oração e período"><a href="#level-video" point-to="Frase oração e período" data-transition="slide">Frase oração e período</a></li>
+				<li data-filtertext="Português Sintáxe Termos da Oração"><a href="#level-video" point-to="Termos da Oração" data-transition="slide">Termos da Oração</a></li>
+				<li data-filtertext="Português Sintáxe Período Composto"><a href="#level-video" point-to="Período Composto" data-transition="slide">Período Composto</a></li>
+				<li data-filtertext="Português Sintáxe Pontuação"><a href="#level-video" point-to="Pontuação" data-transition="slide">Pontuação</a></li>
+				<li data-filtertext="Português Sintáxe Concordância"><a href="#level-video" point-to="Concordância" data-transition="slide">Concordância</a></li>
+				<li data-filtertext="Português Sintáxe Regência"><a href="#level-video" point-to="Regência" data-transition="slide">Regência</a></li>
+				<li data-filtertext="Português Sintáxe Estilística"><a href="#level-video" point-to="Estilística" data-transition="slide">Estilística</a></li>
+				<li data-filtertext="Português Sintáxe Semântica"><a href="#level-video" point-to="Semântica" data-transition="slide">Semântica</a></li>
+				<li data-filtertext="Química Eletroquímica Oxi-redução"><a href="#level-video" point-to="Oxi-redução" data-transition="slide">Oxi-redução</a></li>
+				<li data-filtertext="Química Eletroquímica Pilhas elétricas"><a href="#level-video" point-to="Pilhas elétricas" data-transition="slide">Pilhas elétricas</a></li>
+				<li data-filtertext="Química Eletroquímica Eletrólise"><a href="#level-video" point-to="Eletrólise" data-transition="slide">Eletrólise</a></li>
+				<li data-filtertext="Química Físico-química Soluções"><a href="#level-video" point-to="Soluções" data-transition="slide">Soluções</a></li>
+				<li data-filtertext="Química Físico-química Propriedades coligativas"><a href="#level-video" point-to="Propriedades coligativas" data-transition="slide">Propriedades coligativas</a></li>
+				<li data-filtertext="Química Físico-química Termoquímica"><a href="#level-video" point-to="Termoquímica" data-transition="slide">Termoquímica</a></li>
+				<li data-filtertext="Química Físico-química Cinética química"><a href="#level-video" point-to="Cinética química" data-transition="slide">Cinética química</a></li>
+				<li data-filtertext="Química Físico-química Equilíbrios químicos homogêneos"><a href="#level-video" point-to="Equilíbrios químicos homogêneos" data-transition="slide">Equilíbrios químicos homogêneos</a></li>
+				<li data-filtertext="Química Físico-química Equilíbrios iônicos em soluções aquosas"><a href="#level-video" point-to="Equilíbrios iônicos em soluções aquosas" data-transition="slide">Equilíbrios iônicos em soluções aquosas</a></li>
+				<li data-filtertext="Química Físico-química Equilíbrios heterogêneos"><a href="#level-video" point-to="Equilíbrios heterogêneos" data-transition="slide">Equilíbrios heterogêneos</a></li>
+				<li data-filtertext="Química Físico-química Reações nucleares"><a href="#level-video" point-to="Reações nucleares" data-transition="slide">Reações nucleares</a></li>
+				<li data-filtertext="Química Química básica Conceitos básicos"><a href="#level-video" point-to="Conceitos básicos" data-transition="slide">Conceitos básicos</a></li>
+				<li data-filtertext="Química Química básica Transformações da matéria"><a href="#level-video" point-to="Transformações da matéria" data-transition="slide">Transformações da matéria</a></li>
+				<li data-filtertext="Química Química básica Substâncias químicas"><a href="#level-video" point-to="Substâncias químicas" data-transition="slide">Substâncias químicas</a></li>
+				<li data-filtertext="Química Química geral Modelos atômicos"><a href="#level-video" point-to="Modelos atômicos" data-transition="slide">Modelos atômicos</a></li>
+				<li data-filtertext="Química Química geral Classificação periódica dos elementos"><a href="#level-video" point-to="Classificação periódica dos elementos" data-transition="slide">Classificação periódica dos elementos</a></li>
+				<li data-filtertext="Química Química geral Ligações químicas"><a href="#level-video" point-to="Ligações químicas" data-transition="slide">Ligações químicas</a></li>
+				<li data-filtertext="Química Química geral Geometria molecular"><a href="#level-video" point-to="Geometria molecular" data-transition="slide">Geometria molecular</a></li>
+				<li data-filtertext="Química Química geral Ácidos"><a href="#level-video" point-to="Ácidos" data-transition="slide">Ácidos</a></li>
+				<li data-filtertext="Química Química geral Bases"><a href="#level-video" point-to="Bases" data-transition="slide">Bases</a></li>
+				<li data-filtertext="Química Química geral Sais inorgânicos"><a href="#level-video" point-to="Sais inorgânicos" data-transition="slide">Sais inorgânicos</a></li>
+				<li data-filtertext="Química Química geral Óxidos inorgânicos"><a href="#level-video" point-to="Óxidos inorgânicos" data-transition="slide">Óxidos inorgânicos</a></li>
+				<li data-filtertext="Química Química geral Reações químicas"><a href="#level-video" point-to="Reações químicas" data-transition="slide">Reações químicas</a></li>
+				<li data-filtertext="Química Química geral Massa atômica"><a href="#level-video" point-to="Massa atômica" data-transition="slide">Massa atômica</a></li>
+				<li data-filtertext="Química Química geral Massa molecular"><a href="#level-video" point-to="Massa molecular" data-transition="slide">Massa molecular</a></li>
+				<li data-filtertext="Química Química geral Cálculo de fórmulas"><a href="#level-video" point-to="Cálculo de fórmulas" data-transition="slide">Cálculo de fórmulas</a></li>
+				<li data-filtertext="Química Química geral Cálculo estequiométrico"><a href="#level-video" point-to="Cálculo estequiométrico" data-transition="slide">Cálculo estequiométrico</a></li>
+				<li data-filtertext="Química Química orgânica Hidrocarbonetos"><a href="#level-video" point-to="Hidrocarbonetos" data-transition="slide">Hidrocarbonetos</a></li>
+				<li data-filtertext="Química Química orgânica Funções orgânicas oxigenadas"><a href="#level-video" point-to="Funções orgânicas oxigenadas" data-transition="slide">Funções orgânicas oxigenadas</a></li>
+				<li data-filtertext="Química Química orgânica Funções orgânicas nitrogenadas"><a href="#level-video" point-to="Funções orgânicas nitrogenadas" data-transition="slide">Funções orgânicas nitrogenadas</a></li>
+				<li data-filtertext="Química Química orgânica Outras funções orgânicas"><a href="#level-video" point-to="Outras funções orgânicas" data-transition="slide">Outras funções orgânicas</a></li>
+				<li data-filtertext="Química Química orgânica Estrutura e propriedades físicas dos compostos orgânicos"><a href="#level-video" point-to="Estrutura e propriedades físicas dos compostos orgânicos" data-transition="slide">Estrutura e propriedades físicas dos compostos orgânicos</a></li>
+				<li data-filtertext="Química Química orgânica Isomeria"><a href="#level-video" point-to="Isomeria" data-transition="slide">Isomeria</a></li>
+				<li data-filtertext="Química Química orgânica Reações de substituição"><a href="#level-video" point-to="Reações de substituição" data-transition="slide">Reações de substituição</a></li>
+				<li data-filtertext="Química Química orgânica Reações de adição"><a href="#level-video" point-to="Reações de adição" data-transition="slide">Reações de adição</a></li>
+				<li data-filtertext="Química Química orgânica Reações de eliminação"><a href="#level-video" point-to="Reações de eliminação" data-transition="slide">Reações de eliminação</a></li>
+				<li data-filtertext="Química Química orgânica Carater ácido-básico"><a href="#level-video" point-to="Carater ácido-básico" data-transition="slide">Carater ácido-básico</a></li>
+				<li data-filtertext="Química Química orgânica Outras reações"><a href="#level-video" point-to="Outras reações" data-transition="slide">Outras reações</a></li>
+				<li data-filtertext="Química Química orgânica Glicídios"><a href="#level-video" point-to="Glicídios" data-transition="slide">Glicídios</a></li>
+				<li data-filtertext="Química Química orgânica Lipídios"><a href="#level-video" point-to="Lipídios" data-transition="slide">Lipídios</a></li>
+				<li data-filtertext="Química Química orgânica Aminoácidos"><a href="#level-video" point-to="Aminoácidos" data-transition="slide">Aminoácidos</a></li>
+				<li data-filtertext="Química Química orgânica Proteínas"><a href="#level-video" point-to="Proteínas" data-transition="slide">Proteínas</a></li>
+				<li data-filtertext="Química Química orgânica Polímeros sintéticos"><a href="#level-video" point-to="Polímeros sintéticos" data-transition="slide">Polímeros sintéticos</a></li>			
+			</ul>
+
+			<div class="clear-both"><!-- separator --></div> 
+
+			<h2>Categorias</h2>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#level-category" point-to="Matemática" data-role="button" data-transition="slide">Matemática</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level-category" point-to="Física" data-role="button" data-transition="slide">Física</a>
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#level-category" point-to="Biologia" data-role="button" data-transition="slide">Biologia</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level-category" point-to="História" data-role="button" data-transition="slide">História</a>
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#level-category" point-to="Química" data-role="button" data-transition="slide">Química</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level-category" point-to="Geografia" data-role="button" data-transition="slide">Geografia</a>
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#level-category" point-to="Português" data-role="button" data-transition="slide">Português</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#level-category" point-to="Inglês" data-role="button" data-transition="slide">Inglês</a>
+				</div>
+			</div>
+
+		</div>
+		<div data-role="footer" data-theme="d" data-position="fixed">
+			<h4>Vídeo APP</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="level-category" data-theme="d">
+		<div data-role="header">
+			<a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-transition="slide">Voltar</a>
+			<h1>Aprendizado Coletivo</h1>
+		</div>
+		<div data-role="content">
+			
+			<ul data-role="listview">
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Bioquímica" data-transition="slide"><h3>Bioquímica</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Botânica" data-transition="slide"><h3>Botânica</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Citologia" data-transition="slide"><h3>Citologia</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Divisão Celular" data-transition="slide"><h3>Divisão Celular</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Ecologia" data-transition="slide"><h3>Ecologia</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Embriologia" data-transition="slide"><h3>Embriologia</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Evolução" data-transition="slide"><h3>Evolução</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Fisiologia" data-transition="slide"><h3>Fisiologia</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Genética" data-transition="slide"><h3>Genética</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Histologia" data-transition="slide"><h3>Histologia</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Metabolismo Celular" data-transition="slide"><h3>Metabolismo Celular</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Reprodução e Ciclos de Vida" data-transition="slide"><h3>Reprodução e Ciclos de Vida</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Sistemática" data-transition="slide"><h3>Sistemática</h3><p>Biologia</p></a></li>
+				<li reference="Biologia"><a href="#level-sub-category" point-to="Zoologia" data-transition="slide"><h3>Zoologia</h3><p>Biologia</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Calor" data-transition="slide"><h3>Calor</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Cinemática Escalar" data-transition="slide"><h3>Cinemática Escalar</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Cinemática Vetorial" data-transition="slide"><h3>Cinemática Vetorial</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Eletrodinâmica" data-transition="slide"><h3>Eletrodinâmica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Eletromagnetismo" data-transition="slide"><h3>Eletromagnetismo</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Eletrostática" data-transition="slide"><h3>Eletrostática</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Estática" data-transition="slide"><h3>Estática</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Física Básica" data-transition="slide"><h3>Física Básica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Física Moderna" data-transition="slide"><h3>Física Moderna</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Forças em Dinâmica" data-transition="slide"><h3>Forças em Dinâmica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Gravitação Universal" data-transition="slide"><h3>Gravitação Universal</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Hidrodinâmica" data-transition="slide"><h3>Hidrodinâmica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Hidrostática" data-transition="slide"><h3>Hidrostática</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Ondas" data-transition="slide"><h3>Ondas</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Óptica Geométrica" data-transition="slide"><h3>Óptica Geométrica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Princípios da Conservação" data-transition="slide"><h3>Princípios da Conservação</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Termodinâmica" data-transition="slide"><h3>Termodinâmica</h3><p>Física</p></a></li>
+				<li reference="Física"><a href="#level-sub-category" point-to="Termologia" data-transition="slide"><h3>Termologia</h3><p>Física</p></a></li>
+				<li reference="Geografia"><a href="#level-sub-category" point-to="Economia Mundial" data-transition="slide"><h3>Economia Mundial</h3><p>Geografia</p></a></li>
+				<li reference="Geografia"><a href="#level-sub-category" point-to="Geografia Básica" data-transition="slide"><h3>Geografia Básica</h3><p>Geografia</p></a></li>
+				<li reference="Geografia"><a href="#level-sub-category" point-to="Geografia Geral" data-transition="slide"><h3>Geografia Geral</h3><p>Geografia</p></a></li>
+				<li reference="Geografia"><a href="#level-sub-category" point-to="Geopolítica" data-transition="slide"><h3>Geopolítica</h3><p>Geografia</p></a></li>
+				<li reference="História"><a href="#level-sub-category" point-to="Brasil" data-transition="slide"><h3>Brasil</h3><p>História</p></a></li>
+				<li reference="História"><a href="#level-sub-category" point-to="Geral" data-transition="slide"><h3>Geral</h3><p>História</p></a></li>
+				<li reference="Inglês"><a href="#level-sub-category" point-to="GRAMMAR" data-transition="slide"><h3>GRAMMAR</h3><p>Inglês</p></a></li>
+				<li reference="Inglês"><a href="#level-sub-category" point-to="Verb Tenses" data-transition="slide"><h3>Verb Tenses</h3><p>Inglês</p></a></li>
+				<li reference="Inglês"><a href="#level-sub-category" point-to="Verbs" data-transition="slide"><h3>Verbs</h3><p>Inglês</p></a></li>
+				<li reference="Inglês"><a href="#level-sub-category" point-to="Word" data-transition="slide"><h3>Word</h3><p>Inglês</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Álgebra" data-transition="slide"><h3>Álgebra</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Estatística" data-transition="slide"><h3>Estatística</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Geometria analítica" data-transition="slide"><h3>Geometria analítica</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Geometria Espacial" data-transition="slide"><h3>Geometria Espacial</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Geometria Plana" data-transition="slide"><h3>Geometria Plana</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Matemática Financeira" data-transition="slide"><h3>Matemática Financeira</h3><p>Matemática</p></a></li>
+				<li reference="Matemática"><a href="#level-sub-category" point-to="Trigonometria" data-transition="slide"><h3>Trigonometria</h3><p>Matemática</p></a></li>
+				<li reference="Português"><a href="#level-sub-category" point-to="Gramática" data-transition="slide"><h3>Gramática</h3><p>Português</p></a></li>
+				<li reference="Português"><a href="#level-sub-category" point-to="Literatura" data-transition="slide"><h3>Literatura</h3><p>Português</p></a></li>
+				<li reference="Português"><a href="#level-sub-category" point-to="Redação" data-transition="slide"><h3>Redação</h3><p>Português</p></a></li>
+				<li reference="Português"><a href="#level-sub-category" point-to="Sintaxe" data-transition="slide"><h3>Sintaxe</h3><p>Português</p></a></li>
+				<li reference="Química"><a href="#level-sub-category" point-to="Eletroquímica" data-transition="slide"><h3>Eletroquímica</h3><p>Química</p></a></li>
+				<li reference="Química"><a href="#level-sub-category" point-to="Físico-química" data-transition="slide"><h3>Físico-química</h3><p>Química</p></a></li>
+				<li reference="Química"><a href="#level-sub-category" point-to="Química básica" data-transition="slide"><h3>Química básica</h3><p>Química</p></a></li>
+				<li reference="Química"><a href="#level-sub-category" point-to="Química geral" data-transition="slide"><h3>Química geral</h3><p>Química</p></a></li>
+				<li reference="Química"><a href="#level-sub-category" point-to="Química orgânica" data-transition="slide"><h3>Química orgânica</h3><p>Química</p></a></li>
+			</ul>
+						
+		</div>
+		<div data-role="footer" data-theme="d" data-position="fixed">
+			<h4>Vídeo APP</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="level-sub-category" data-theme="d">
+		<div data-role="header">
+			<a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-transition="slide">Voltar</a>
+			<h1>Aprendizado Coletivo</h1>
+		</div>
+		<div data-role="content">
+			
+			<ul data-role="listview">
+				<li reference="Física Básica"><a href="#level-video" point-to="Introdução à Física" data-transition="slide"><h3>Introdução à Física</h3><p>Física Básica</p></a></li>
+				<li reference="Física Básica"><a href="#level-video" point-to="Introdução ao estudo dos movimentos" data-transition="slide"><h3>Introdução ao estudo dos movimentos</h3><p>Física Básica</p></a></li>
+				<li reference="Cinemática Escalar"><a href="#level-video" point-to="Movimento Uniforme" data-transition="slide"><h3>Movimento Uniforme</h3><p>Cinemática Escalar</p></a></li>
+				<li reference="Cinemática Escalar"><a href="#level-video" point-to="Movimento Uniformemente Variado" data-transition="slide"><h3>Movimento Uniformemente Variado</h3><p>Cinemática Escalar</p></a></li>
+				<li reference="Cinemática Escalar"><a href="#level-video" point-to="Movimento Vertical no Vácuo" data-transition="slide"><h3>Movimento Vertical no Vácuo</h3><p>Cinemática Escalar</p></a></li>
+				<li reference="Cinemática Escalar"><a href="#level-video" point-to="Gráficos" data-transition="slide"><h3>Gráficos</h3><p>Cinemática Escalar</p></a></li>
+				<li reference="Física Básica"><a href="#level-video" point-to="Vetores" data-transition="slide"><h3>Vetores</h3><p>Física Básica</p></a></li>
+				<li reference="Cinemática Vetorial"><a href="#level-video" point-to="Velocidade e Aceleração Vetoriais" data-transition="slide"><h3>Velocidade e Aceleração Vetoriais</h3><p>Cinemática Vetorial</p></a></li>
+				<li reference="Cinemática Vetorial"><a href="#level-video" point-to="Lançamento horizontal no vácuo" data-transition="slide"><h3>Lançamento horizontal no vácuo</h3><p>Cinemática Vetorial</p></a></li>
+				<li reference="Cinemática Vetorial"><a href="#level-video" point-to="Lançamento oblíquo no vácuo" data-transition="slide"><h3>Lançamento oblíquo no vácuo</h3><p>Cinemática Vetorial</p></a></li>
+				<li reference="Cinemática Vetorial"><a href="#level-video" point-to="Movimentos circulares" data-transition="slide"><h3>Movimentos circulares</h3><p>Cinemática Vetorial</p></a></li>
+				<li reference="Forças em Dinâmica"><a href="#level-video" point-to="Princípios fundamentais da dinâmica" data-transition="slide"><h3>Princípios fundamentais da dinâmica</h3><p>Forças em Dinâmica</p></a></li>
+				<li reference="Forças em Dinâmica"><a href="#level-video" point-to="Forças de atrito" data-transition="slide"><h3>Forças de atrito</h3><p>Forças em Dinâmica</p></a></li>
+				<li reference="Forças em Dinâmica"><a href="#level-video" point-to="Forças em trajetórias curvilíneas" data-transition="slide"><h3>Forças em trajetórias curvilíneas</h3><p>Forças em Dinâmica</p></a></li>
+				<li reference="Princípios da Conservação"><a href="#level-video" point-to="Trabalho" data-transition="slide"><h3>Trabalho</h3><p>Princípios da Conservação</p></a></li>
+				<li reference="Princípios da Conservação"><a href="#level-video" point-to="Energia" data-transition="slide"><h3>Energia</h3><p>Princípios da Conservação</p></a></li>
+				<li reference="Princípios da Conservação"><a href="#level-video" point-to="Impulso e quantidade de movimento" data-transition="slide"><h3>Impulso e quantidade de movimento</h3><p>Princípios da Conservação</p></a></li>
+				<li reference="Gravitação Universal"><a href="#level-video" point-to="A Gravitação Universal" data-transition="slide"><h3>A Gravitação Universal</h3><p>Gravitação Universal</p></a></li>
+				<li reference="Estática"><a href="#level-video" point-to="Equílibrio do Ponto Material" data-transition="slide"><h3>Equílibrio do Ponto Material</h3><p>Estática</p></a></li>
+				<li reference="Estática"><a href="#level-video" point-to="Equilíbrio dos corpos extensos" data-transition="slide"><h3>Equilíbrio dos corpos extensos</h3><p>Estática</p></a></li>
+				<li reference="Hidrostática"><a href="#level-video" point-to="Hidrostática" data-transition="slide"><h3>Hidrostática</h3><p>Hidrostática</p></a></li>
+				<li reference="Hidrodinâmica"><a href="#level-video" point-to="Hidrodinâmica" data-transition="slide"><h3>Hidrodinâmica</h3><p>Hidrodinâmica</p></a></li>
+				<li reference="Física Básica"><a href="#level-video" point-to="Introdução à Termologia" data-transition="slide"><h3>Introdução à Termologia</h3><p>Física Básica</p></a></li>
+				<li reference="Termologia"><a href="#level-video" point-to="Termometria" data-transition="slide"><h3>Termometria</h3><p>Termologia</p></a></li>
+				<li reference="Termologia"><a href="#level-video" point-to="Dilatação Térmica de Sólidos e Líquidos" data-transition="slide"><h3>Dilatação Térmica de Sólidos e Líquidos</h3><p>Termologia</p></a></li>
+				<li reference="Calor"><a href="#level-video" point-to="Calorimetria" data-transition="slide"><h3>Calorimetria</h3><p>Calor</p></a></li>
+				<li reference="Calor"><a href="#level-video" point-to="Mudanças de fase" data-transition="slide"><h3>Mudanças de fase</h3><p>Calor</p></a></li>
+				<li reference="Calor"><a href="#level-video" point-to="Os diagramas de fases" data-transition="slide"><h3>Os diagramas de fases</h3><p>Calor</p></a></li>
+				<li reference="Calor"><a href="#level-video" point-to="Propagação do calor" data-transition="slide"><h3>Propagação do calor</h3><p>Calor</p></a></li>
+				<li reference="Termodinâmica"><a href="#level-video" point-to="Estudo dos gases" data-transition="slide"><h3>Estudo dos gases</h3><p>Termodinâmica</p></a></li>
+				<li reference="Termodinâmica"><a href="#level-video" point-to="As leis da Termodinâmica" data-transition="slide"><h3>As leis da Termodinâmica</h3><p>Termodinâmica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Introdução à Óptica Geométrica" data-transition="slide"><h3>Introdução à Óptica Geométrica</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Reflexão da Luz" data-transition="slide"><h3>Reflexão da Luz</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Espelhos Planos" data-transition="slide"><h3>Espelhos Planos</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Espelhos Esféricos" data-transition="slide"><h3>Espelhos Esféricos</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Refração Luminosa" data-transition="slide"><h3>Refração Luminosa</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Lentes esféricas delgadas" data-transition="slide"><h3>Lentes esféricas delgadas</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Óptica Geométrica"><a href="#level-video" point-to="Instrumentos ópticos" data-transition="slide"><h3>Instrumentos ópticos</h3><p>Óptica Geométrica</p></a></li>
+				<li reference="Ondas"><a href="#level-video" point-to="Movimento harmônico simples (MHS)" data-transition="slide"><h3>Movimento harmônico simples (MHS)</h3><p>Ondas</p></a></li>
+				<li reference="Física Básica"><a href="#level-video" point-to="Introdução a Ondas" data-transition="slide"><h3>Introdução a Ondas</h3><p>Física Básica</p></a></li>
+				<li reference="Ondas"><a href="#level-video" point-to="Interferência de ondas" data-transition="slide"><h3>Interferência de ondas</h3><p>Ondas</p></a></li>
+				<li reference="Ondas"><a href="#level-video" point-to="As ondas sonoras" data-transition="slide"><h3>As ondas sonoras</h3><p>Ondas</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Eletrização" data-transition="slide"><h3>Eletrização</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Força Elétrica" data-transition="slide"><h3>Força Elétrica</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Campo elétrico" data-transition="slide"><h3>Campo elétrico</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Trabalho e potencial elétrico" data-transition="slide"><h3>Trabalho e potencial elétrico</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Condutores Eletrostáticos" data-transition="slide"><h3>Condutores Eletrostáticos</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="Capacitância Eletrostática" data-transition="slide"><h3>Capacitância Eletrostática</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrostática"><a href="#level-video" point-to="CARGAS ELÉTRICAS EM MOVIMENTO" data-transition="slide"><h3>CARGAS ELÉTRICAS EM MOVIMENTO</h3><p>Eletrostática</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Corrente Elétrica" data-transition="slide"><h3>Corrente Elétrica</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Resistores" data-transition="slide"><h3>Resistores</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Associação de resistores" data-transition="slide"><h3>Associação de resistores</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Medidas elétricas" data-transition="slide"><h3>Medidas elétricas</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Geradores elétricos" data-transition="slide"><h3>Geradores elétricos</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Receptores elétricos" data-transition="slide"><h3>Receptores elétricos</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="As leis de Kirchhoff" data-transition="slide"><h3>As leis de Kirchhoff</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletrodinâmica"><a href="#level-video" point-to="Capacitores" data-transition="slide"><h3>Capacitores</h3><p>Eletrodinâmica</p></a></li>
+				<li reference="Eletromagnetismo"><a href="#level-video" point-to="Campo magnético" data-transition="slide"><h3>Campo magnético</h3><p>Eletromagnetismo</p></a></li>
+				<li reference="Eletromagnetismo"><a href="#level-video" point-to="Força magnética" data-transition="slide"><h3>Força magnética</h3><p>Eletromagnetismo</p></a></li>
+				<li reference="Eletromagnetismo"><a href="#level-video" point-to="Indução eletromagnética" data-transition="slide"><h3>Indução eletromagnética</h3><p>Eletromagnetismo</p></a></li>
+				<li reference="Eletromagnetismo"><a href="#level-video" point-to="Ondas eletromagnéticas" data-transition="slide"><h3>Ondas eletromagnéticas</h3><p>Eletromagnetismo</p></a></li>
+				<li reference="Física Moderna"><a href="#level-video" point-to="Relatividade especial" data-transition="slide"><h3>Relatividade especial</h3><p>Física Moderna</p></a></li>
+				<li reference="Física Moderna"><a href="#level-video" point-to="Física Quântica" data-transition="slide"><h3>Física Quântica</h3><p>Física Moderna</p></a></li>
+				<li reference="Física Moderna"><a href="#level-video" point-to="Física Nuclear" data-transition="slide"><h3>Física Nuclear</h3><p>Física Moderna</p></a></li>
+				<li reference="Física Básica"><a href="#level-video" point-to="Análise dimensional" data-transition="slide"><h3>Análise dimensional</h3><p>Física Básica</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Conjuntos" data-transition="slide"><h3>Conjuntos</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Fundamentos de funções" data-transition="slide"><h3>Fundamentos de funções</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Função afim" data-transition="slide"><h3>Função afim</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Função quadrática" data-transition="slide"><h3>Função quadrática</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Função modular" data-transition="slide"><h3>Função modular</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Função exponencial" data-transition="slide"><h3>Função exponencial</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Logaritmos" data-transition="slide"><h3>Logaritmos</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Função Logarítmica" data-transition="slide"><h3>Função Logarítmica</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Progressões" data-transition="slide"><h3>Progressões</h3><p>Álgebra</p></a></li>
+				<li reference="Matemática Financeira"><a href="#level-video" point-to="Matemática financeira" data-transition="slide"><h3>Matemática financeira</h3><p>Matemática Financeira</p></a></li>
+				<li reference="Geometria Plana"><a href="#level-video" point-to="Semelhança de triângulos" data-transition="slide"><h3>Semelhança de triângulos</h3><p>Geometria Plana</p></a></li>
+				<li reference="Trigonometria"><a href="#level-video" point-to="Trigonometria no triângulo retângulo" data-transition="slide"><h3>Trigonometria no triângulo retângulo</h3><p>Trigonometria</p></a></li>
+				<li reference="Geometria Plana"><a href="#level-video" point-to="Resolução de triângulos" data-transition="slide"><h3>Resolução de triângulos</h3><p>Geometria Plana</p></a></li>
+				<li reference="Trigonometria"><a href="#level-video" point-to="Funções trigonométricas" data-transition="slide"><h3>Funções trigonométricas</h3><p>Trigonometria</p></a></li>
+				<li reference="Trigonometria"><a href="#level-video" point-to="Relações entre funções trigonométricas" data-transition="slide"><h3>Relações entre funções trigonométricas</h3><p>Trigonometria</p></a></li>
+				<li reference="Trigonometria"><a href="#level-video" point-to="Transformações trigonométricas" data-transition="slide"><h3>Transformações trigonométricas</h3><p>Trigonometria</p></a></li>
+				<li reference="Trigonometria"><a href="#level-video" point-to="Equações e inequações trigonométricas" data-transition="slide"><h3>Equações e inequações trigonométricas</h3><p>Trigonometria</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Matrizes" data-transition="slide"><h3>Matrizes</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Determinantes" data-transition="slide"><h3>Determinantes</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Sistemas lineares" data-transition="slide"><h3>Sistemas lineares</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Análise combinatória" data-transition="slide"><h3>Análise combinatória</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Probabilidade" data-transition="slide"><h3>Probabilidade</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Binômio de Newton" data-transition="slide"><h3>Binômio de Newton</h3><p>Álgebra</p></a></li>
+				<li reference="Estatística"><a href="#level-video" point-to="Estatística" data-transition="slide"><h3>Estatística</h3><p>Estatística</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Geometria espacial de posição" data-transition="slide"><h3>Geometria espacial de posição</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Poliédros" data-transition="slide"><h3>Poliédros</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Plana"><a href="#level-video" point-to="Áreas de superfícies planas" data-transition="slide"><h3>Áreas de superfícies planas</h3><p>Geometria Plana</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Prisma" data-transition="slide"><h3>Prisma</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Pirâmide" data-transition="slide"><h3>Pirâmide</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Cilíndro" data-transition="slide"><h3>Cilíndro</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Cone" data-transition="slide"><h3>Cone</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria Espacial"><a href="#level-video" point-to="Esfera" data-transition="slide"><h3>Esfera</h3><p>Geometria Espacial</p></a></li>
+				<li reference="Geometria analítica"><a href="#level-video" point-to="Ponto" data-transition="slide"><h3>Ponto</h3><p>Geometria analítica</p></a></li>
+				<li reference="Geometria analítica"><a href="#level-video" point-to="Reta" data-transition="slide"><h3>Reta</h3><p>Geometria analítica</p></a></li>
+				<li reference="Geometria analítica"><a href="#level-video" point-to="Circunferência" data-transition="slide"><h3>Circunferência</h3><p>Geometria analítica</p></a></li>
+				<li reference="Geometria analítica"><a href="#level-video" point-to="Cônicas" data-transition="slide"><h3>Cônicas</h3><p>Geometria analítica</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Números complexos" data-transition="slide"><h3>Números complexos</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Polinômios" data-transition="slide"><h3>Polinômios</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Equações polinomiais" data-transition="slide"><h3>Equações polinomiais</h3><p>Álgebra</p></a></li>
+				<li reference="Química básica"><a href="#level-video" point-to="Conceitos básicos" data-transition="slide"><h3>Conceitos básicos</h3><p>Química básica</p></a></li>
+				<li reference="Química básica"><a href="#level-video" point-to="Transformações da matéria" data-transition="slide"><h3>Transformações da matéria</h3><p>Química básica</p></a></li>
+				<li reference="Química básica"><a href="#level-video" point-to="Substâncias químicas" data-transition="slide"><h3>Substâncias químicas</h3><p>Química básica</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Modelos atômicos" data-transition="slide"><h3>Modelos atômicos</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Classificação periódica dos elementos" data-transition="slide"><h3>Classificação periódica dos elementos</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Ligações químicas" data-transition="slide"><h3>Ligações químicas</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Geometria molecular" data-transition="slide"><h3>Geometria molecular</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Ácidos" data-transition="slide"><h3>Ácidos</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Bases" data-transition="slide"><h3>Bases</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Sais inorgânicos" data-transition="slide"><h3>Sais inorgânicos</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Óxidos inorgânicos" data-transition="slide"><h3>Óxidos inorgânicos</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Reações químicas" data-transition="slide"><h3>Reações químicas</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Massa atômica" data-transition="slide"><h3>Massa atômica</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Massa molecular" data-transition="slide"><h3>Massa molecular</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Cálculo de fórmulas" data-transition="slide"><h3>Cálculo de fórmulas</h3><p>Química geral</p></a></li>
+				<li reference="Química geral"><a href="#level-video" point-to="Cálculo estequiométrico" data-transition="slide"><h3>Cálculo estequiométrico</h3><p>Química geral</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Soluções" data-transition="slide"><h3>Soluções</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Propriedades coligativas" data-transition="slide"><h3>Propriedades coligativas</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Termoquímica" data-transition="slide"><h3>Termoquímica</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Cinética química" data-transition="slide"><h3>Cinética química</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Equilíbrios químicos homogêneos" data-transition="slide"><h3>Equilíbrios químicos homogêneos</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Equilíbrios iônicos em soluções aquosas" data-transition="slide"><h3>Equilíbrios iônicos em soluções aquosas</h3><p>Físico-química</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Equilíbrios heterogêneos" data-transition="slide"><h3>Equilíbrios heterogêneos</h3><p>Físico-química</p></a></li>
+				<li reference="Eletroquímica"><a href="#level-video" point-to="Oxi-redução" data-transition="slide"><h3>Oxi-redução</h3><p>Eletroquímica</p></a></li>
+				<li reference="Eletroquímica"><a href="#level-video" point-to="Pilhas elétricas" data-transition="slide"><h3>Pilhas elétricas</h3><p>Eletroquímica</p></a></li>
+				<li reference="Eletroquímica"><a href="#level-video" point-to="Eletrólise" data-transition="slide"><h3>Eletrólise</h3><p>Eletroquímica</p></a></li>
+				<li reference="Físico-química"><a href="#level-video" point-to="Reações nucleares" data-transition="slide"><h3>Reações nucleares</h3><p>Físico-química</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Hidrocarbonetos" data-transition="slide"><h3>Hidrocarbonetos</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Funções orgânicas oxigenadas" data-transition="slide"><h3>Funções orgânicas oxigenadas</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Funções orgânicas nitrogenadas" data-transition="slide"><h3>Funções orgânicas nitrogenadas</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Outras funções orgânicas" data-transition="slide"><h3>Outras funções orgânicas</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Estrutura e propriedades físicas dos compostos orgânicos" data-transition="slide"><h3>Estrutura e propriedades físicas dos compostos orgânicos</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Isomeria" data-transition="slide"><h3>Isomeria</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Reações de substituição" data-transition="slide"><h3>Reações de substituição</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Reações de adição" data-transition="slide"><h3>Reações de adição</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Reações de eliminação" data-transition="slide"><h3>Reações de eliminação</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Carater ácido-básico" data-transition="slide"><h3>Carater ácido-básico</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Outras reações" data-transition="slide"><h3>Outras reações</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Glicídios" data-transition="slide"><h3>Glicídios</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Lipídios" data-transition="slide"><h3>Lipídios</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Aminoácidos" data-transition="slide"><h3>Aminoácidos</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Proteínas" data-transition="slide"><h3>Proteínas</h3><p>Química orgânica</p></a></li>
+				<li reference="Química orgânica"><a href="#level-video" point-to="Polímeros sintéticos" data-transition="slide"><h3>Polímeros sintéticos</h3><p>Química orgânica</p></a></li>
+				<li reference="Bioquímica"><a href="#level-video" point-to="Substâncias inorgânicas" data-transition="slide"><h3>Substâncias inorgânicas</h3><p>Bioquímica</p></a></li>
+				<li reference="Bioquímica"><a href="#level-video" point-to="Substâncias orgânicas" data-transition="slide"><h3>Substâncias orgânicas</h3><p>Bioquímica</p></a></li>
+				<li reference="Citologia"><a href="#level-video" point-to="Envoltórios Celulares" data-transition="slide"><h3>Envoltórios Celulares</h3><p>Citologia</p></a></li>
+				<li reference="Citologia"><a href="#level-video" point-to="Citoplasma" data-transition="slide"><h3>Citoplasma</h3><p>Citologia</p></a></li>
+				<li reference="Citologia"><a href="#level-video" point-to="Núcleo e Cromossomos" data-transition="slide"><h3>Núcleo e Cromossomos</h3><p>Citologia</p></a></li>
+				<li reference="Citologia"><a href="#level-video" point-to="Controle Gênico" data-transition="slide"><h3>Controle Gênico</h3><p>Citologia</p></a></li>
+				<li reference="Divisão Celular"><a href="#level-video" point-to="Meiose" data-transition="slide"><h3>Meiose</h3><p>Divisão Celular</p></a></li>
+				<li reference="Divisão Celular"><a href="#level-video" point-to="Mitose" data-transition="slide"><h3>Mitose</h3><p>Divisão Celular</p></a></li>
+				<li reference="Metabolismo Celular"><a href="#level-video" point-to="Respiração Celular" data-transition="slide"><h3>Respiração Celular</h3><p>Metabolismo Celular</p></a></li>
+				<li reference="Metabolismo Celular"><a href="#level-video" point-to="Fermentação" data-transition="slide"><h3>Fermentação</h3><p>Metabolismo Celular</p></a></li>
+				<li reference="Metabolismo Celular"><a href="#level-video" point-to="Fotossíntese" data-transition="slide"><h3>Fotossíntese</h3><p>Metabolismo Celular</p></a></li>
+				<li reference="Metabolismo Celular"><a href="#level-video" point-to="Quimiossíntese" data-transition="slide"><h3>Quimiossíntese</h3><p>Metabolismo Celular</p></a></li>
+				<li reference="Histologia"><a href="#level-video" point-to="Tecidos Epiteliais" data-transition="slide"><h3>Tecidos Epiteliais</h3><p>Histologia</p></a></li>
+				<li reference="Histologia"><a href="#level-video" point-to="Tecidos Conjuntivos" data-transition="slide"><h3>Tecidos Conjuntivos</h3><p>Histologia</p></a></li>
+				<li reference="Histologia"><a href="#level-video" point-to="Tecido Sanguíneo" data-transition="slide"><h3>Tecido Sanguíneo</h3><p>Histologia</p></a></li>
+				<li reference="Histologia"><a href="#level-video" point-to="Tecidos Musculares" data-transition="slide"><h3>Tecidos Musculares</h3><p>Histologia</p></a></li>
+				<li reference="Histologia"><a href="#level-video" point-to="Tecido Nervoso" data-transition="slide"><h3>Tecido Nervoso</h3><p>Histologia</p></a></li>
+				<li reference="Reprodução e Ciclos de Vida"><a href="#level-video" point-to="Tipos de reprodução" data-transition="slide"><h3>Tipos de reprodução</h3><p>Reprodução e Ciclos de Vida</p></a></li>
+				<li reference="Reprodução e Ciclos de Vida"><a href="#level-video" point-to="Tipos de ciclo de vida" data-transition="slide"><h3>Tipos de ciclo de vida</h3><p>Reprodução e Ciclos de Vida</p></a></li>
+				<li reference="Reprodução e Ciclos de Vida"><a href="#level-video" point-to="Reprodução humana" data-transition="slide"><h3>Reprodução humana</h3><p>Reprodução e Ciclos de Vida</p></a></li>
+				<li reference="Embriologia"><a href="#level-video" point-to="Desenvolvimento embrionário" data-transition="slide"><h3>Desenvolvimento embrionário</h3><p>Embriologia</p></a></li>
+				<li reference="Embriologia"><a href="#level-video" point-to="Formação de tecidos e órgãos" data-transition="slide"><h3>Formação de tecidos e órgãos</h3><p>Embriologia</p></a></li>
+				<li reference="Embriologia"><a href="#level-video" point-to="Desenvolvimento embrionário humano" data-transition="slide"><h3>Desenvolvimento embrionário humano</h3><p>Embriologia</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Classificação dos seres vivos" data-transition="slide"><h3>Classificação dos seres vivos</h3><p>Sistemática</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Reinos dos seres vivos" data-transition="slide"><h3>Reinos dos seres vivos</h3><p>Sistemática</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Vírus" data-transition="slide"><h3>Vírus</h3><p>Sistemática</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Reino Monera" data-transition="slide"><h3>Reino Monera</h3><p>Sistemática</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Reino Protista" data-transition="slide"><h3>Reino Protista</h3><p>Sistemática</p></a></li>
+				<li reference="Sistemática"><a href="#level-video" point-to="Fungos" data-transition="slide"><h3>Fungos</h3><p>Sistemática</p></a></li>
+				<li reference="Botânica"><a href="#level-video" point-to="Evolução do grupo das plantas" data-transition="slide"><h3>Evolução do grupo das plantas</h3><p>Botânica</p></a></li>
+				<li reference="Botânica"><a href="#level-video" point-to="Briófitas" data-transition="slide"><h3>Briófitas</h3><p>Botânica</p></a></li>
+				<li reference="Botânica"><a href="#level-video" point-to="Pteridófitas" data-transition="slide"><h3>Pteridófitas</h3><p>Botânica</p></a></li>
+				<li reference="Botânica"><a href="#level-video" point-to="Gimnospermas" data-transition="slide"><h3>Gimnospermas</h3><p>Botânica</p></a></li>
+				<li reference="Botânica"><a href="#level-video" point-to="Angiospermas" data-transition="slide"><h3>Angiospermas</h3><p>Botânica</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Evolução do grupos dos animais" data-transition="slide"><h3>Evolução do grupos dos animais</h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Poríferos e Cnidários" data-transition="slide"><h3>Poríferos e Cnidários</h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Platelmintos e Nematelmintos" data-transition="slide"><h3>Platelmintos e Nematelmintos</h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Moluscos e Anelídeos" data-transition="slide"><h3>Moluscos e Anelídeos</h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Artrópodes" data-transition="slide"><h3>Artrópodes</h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Equinodermos " data-transition="slide"><h3>Equinodermos </h3><p>Zoologia</p></a></li>
+				<li reference="Zoologia"><a href="#level-video" point-to="Vertebrados" data-transition="slide"><h3>Vertebrados</h3><p>Zoologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Digestório" data-transition="slide"><h3>Sistema Digestório</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Circulatório" data-transition="slide"><h3>Sistema Circulatório</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Respiratório" data-transition="slide"><h3>Sistema Respiratório</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Excretor" data-transition="slide"><h3>Sistema Excretor</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Esqueleto e Musculatura" data-transition="slide"><h3>Esqueleto e Musculatura</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Nervoso" data-transition="slide"><h3>Sistema Nervoso</h3><p>Fisiologia</p></a></li>
+				<li reference="Fisiologia"><a href="#level-video" point-to="Sistema Endócrino" data-transition="slide"><h3>Sistema Endócrino</h3><p>Fisiologia</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Evolução da genética" data-transition="slide"><h3>Evolução da genética</h3><p>Genética</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Leis de Mendel" data-transition="slide"><h3>Leis de Mendel</h3><p>Genética</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Mapeamento gênico" data-transition="slide"><h3>Mapeamento gênico</h3><p>Genética</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Herança e Sexo" data-transition="slide"><h3>Herança e Sexo</h3><p>Genética</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Expressão gênica" data-transition="slide"><h3>Expressão gênica</h3><p>Genética</p></a></li>
+				<li reference="Genética"><a href="#level-video" point-to="Aplicação da genética" data-transition="slide"><h3>Aplicação da genética</h3><p>Genética</p></a></li>
+				<li reference="Evolução"><a href="#level-video" point-to="Teoria moderna da evolução" data-transition="slide"><h3>Teoria moderna da evolução</h3><p>Evolução</p></a></li>
+				<li reference="Evolução"><a href="#level-video" point-to="Origem das espécies" data-transition="slide"><h3>Origem das espécies</h3><p>Evolução</p></a></li>
+				<li reference="Evolução"><a href="#level-video" point-to="Evolução humana" data-transition="slide"><h3>Evolução humana</h3><p>Evolução</p></a></li>
+				<li reference="Ecologia"><a href="#level-video" point-to="Dinâmica das populações" data-transition="slide"><h3>Dinâmica das populações</h3><p>Ecologia</p></a></li>
+				<li reference="Ecologia"><a href="#level-video" point-to="Relações ecológicas" data-transition="slide"><h3>Relações ecológicas</h3><p>Ecologia</p></a></li>
+				<li reference="Ecologia"><a href="#level-video" point-to="Sucessão ecológica" data-transition="slide"><h3>Sucessão ecológica</h3><p>Ecologia</p></a></li>
+				<li reference="Ecologia"><a href="#level-video" point-to="Biomas" data-transition="slide"><h3>Biomas</h3><p>Ecologia</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Formas e Movimentos da Terra" data-transition="slide"><h3>Formas e Movimentos da Terra</h3><p>Geografia Básica</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Coordenadas Geográficas" data-transition="slide"><h3>Coordenadas Geográficas</h3><p>Geografia Básica</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Escalas" data-transition="slide"><h3>Escalas</h3><p>Geografia Básica</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Fusos Horários" data-transition="slide"><h3>Fusos Horários</h3><p>Geografia Básica</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Projeções Cartográficas" data-transition="slide"><h3>Projeções Cartográficas</h3><p>Geografia Básica</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Meio ambiente" data-transition="slide"><h3>Meio ambiente</h3><p>Geografia Geral</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Recursos Naturais" data-transition="slide"><h3>Recursos Naturais</h3><p>Geografia Geral</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Demografia" data-transition="slide"><h3>Demografia</h3><p>Geografia Geral</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Economia" data-transition="slide"><h3>Economia</h3><p>Geografia Geral</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Macro-Regiões" data-transition="slide"><h3>Macro-Regiões</h3><p>Geografia Geral</p></a></li>
+				<li reference="Geografia Geral"><a href="#level-video" point-to="Complexos Regionais" data-transition="slide"><h3>Complexos Regionais</h3><p>Geografia Geral</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Agropecuária" data-transition="slide"><h3>Agropecuária</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Política Econômica" data-transition="slide"><h3>Política Econômica</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Indústria" data-transition="slide"><h3>Indústria</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Turismo" data-transition="slide"><h3>Turismo</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Transporte/Comunicação" data-transition="slide"><h3>Transporte/Comunicação</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Comércio/ Serviço" data-transition="slide"><h3>Comércio/ Serviço</h3><p>Economia Mundial</p></a></li>
+				<li reference="Economia Mundial"><a href="#level-video" point-to="Globalização" data-transition="slide"><h3>Globalização</h3><p>Economia Mundial</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Ciência Geográfica" data-transition="slide"><h3>Ciência Geográfica</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="África" data-transition="slide"><h3>África</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="América do Sul" data-transition="slide"><h3>América do Sul</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="América Central" data-transition="slide"><h3>América Central</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="América do Norte" data-transition="slide"><h3>América do Norte</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Japão" data-transition="slide"><h3>Japão</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Oriente Médio" data-transition="slide"><h3>Oriente Médio</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="China" data-transition="slide"><h3>China</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Sudeste Asiático" data-transition="slide"><h3>Sudeste Asiático</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Oceania" data-transition="slide"><h3>Oceania</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Europa" data-transition="slide"><h3>Europa</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="CEI" data-transition="slide"><h3>CEI</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Mundial" data-transition="slide"><h3>Mundial</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Organismos Mundiais" data-transition="slide"><h3>Organismos Mundiais</h3><p>Geopolítica</p></a></li>
+				<li reference="Geopolítica"><a href="#level-video" point-to="Antárdida" data-transition="slide"><h3>Antárdida</h3><p>Geopolítica</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Primitivo" data-transition="slide"><h3>Primitivo</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Brasil Colônia" data-transition="slide"><h3>Brasil Colônia</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Brasil Colônia (1530 – 1808)" data-transition="slide"><h3>Brasil Colônia (1530 – 1808)</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Monarquia" data-transition="slide"><h3>Monarquia</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Segundo Reinado" data-transition="slide"><h3>Segundo Reinado</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="República Velha (1989– 1930)" data-transition="slide"><h3>República Velha (1989– 1930)</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="República do Café–com–Leite" data-transition="slide"><h3>República do Café–com–Leite</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Ditadura Militar (1964–1985)" data-transition="slide"><h3>Ditadura Militar (1964–1985)</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Redemocratização" data-transition="slide"><h3>Redemocratização</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Brasil Atual" data-transition="slide"><h3>Brasil Atual</h3><p>Brasil</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Regionalismos" data-transition="slide"><h3>Regionalismos</h3><p>Brasil</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="Povos Asiáticos" data-transition="slide"><h3>Povos Asiáticos</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="Povos Escravistas" data-transition="slide"><h3>Povos Escravistas</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História Contemporânea" data-transition="slide"><h3>História Contemporânea</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História Medieval" data-transition="slide"><h3>História Medieval</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História Moderna" data-transition="slide"><h3>História Moderna</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História da América Anglo–Saxônica" data-transition="slide"><h3>História da América Anglo–Saxônica</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História da América Latina" data-transition="slide"><h3>História da América Latina</h3><p>Geral</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="Pré–História" data-transition="slide"><h3>Pré–História</h3><p>Geral</p></a></li>
+				<li reference="Gramática"><a href="#level-video" point-to="Linguagem" data-transition="slide"><h3>Linguagem</h3><p>Gramática</p></a></li>
+				<li reference="Gramática"><a href="#level-video" point-to="Fonologia" data-transition="slide"><h3>Fonologia</h3><p>Gramática</p></a></li>
+				<li reference="Gramática"><a href="#level-video" point-to="Ortografia" data-transition="slide"><h3>Ortografia</h3><p>Gramática</p></a></li>
+				<li reference="Gramática"><a href="#level-video" point-to="Acentuação" data-transition="slide"><h3>Acentuação</h3><p>Gramática</p></a></li>
+				<li reference="Gramática"><a href="#level-video" point-to="Morfologia" data-transition="slide"><h3>Morfologia</h3><p>Gramática</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Frase oração e período" data-transition="slide"><h3>Frase oração e período</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Termos da Oração" data-transition="slide"><h3>Termos da Oração</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Período Composto" data-transition="slide"><h3>Período Composto</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Pontuação" data-transition="slide"><h3>Pontuação</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Concordância" data-transition="slide"><h3>Concordância</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Regência" data-transition="slide"><h3>Regência</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Estilística" data-transition="slide"><h3>Estilística</h3><p>Sintáxe</p></a></li>
+				<li reference="Sintáxe"><a href="#level-video" point-to="Semântica" data-transition="slide"><h3>Semântica</h3><p>Sintáxe</p></a></li>
+				<li reference="Literatura"><a href="#level-video" point-to="Generos Literários" data-transition="slide"><h3>Generos Literários</h3><p>Literatura</p></a></li>
+				<li reference="Literatura"><a href="#level-video" point-to="Literatura Brasileira" data-transition="slide"><h3>Literatura Brasileira</h3><p>Literatura</p></a></li>
+				<li reference="Literatura"><a href="#level-video" point-to="Literatura Portuguesa" data-transition="slide"><h3>Literatura Portuguesa</h3><p>Literatura</p></a></li>
+				<li reference="Redação"><a href="#level-video" point-to="Redação" data-transition="slide"><h3>Redação</h3><p>Redação</p></a></li>
+				<li reference="GRAMMAR"><a href="#level-video" point-to="Question Tag" data-transition="slide"><h3>Question Tag</h3><p>GRAMMAR</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Addition to Remarks" data-transition="slide"><h3>Addition to Remarks</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Conditional Sentences" data-transition="slide"><h3>Conditional Sentences</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Direct Speech" data-transition="slide"><h3>Direct Speech</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Indirect Speech" data-transition="slide"><h3>Indirect Speech</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Modals" data-transition="slide"><h3>Modals</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="Auxiliary verbs" data-transition="slide"><h3>Auxiliary verbs</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="The Gerund" data-transition="slide"><h3>The Gerund</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="The Present Participle" data-transition="slide"><h3>The Present Participle</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="The Imperative Case" data-transition="slide"><h3>The Imperative Case</h3><p>Verbs</p></a></li>
+				<li reference="Verbs"><a href="#level-video" point-to="The Infinitive" data-transition="slide"><h3>The Infinitive</h3><p>Verbs</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="Future Tense" data-transition="slide"><h3>Future Tense</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Past Continuous" data-transition="slide"><h3>The Past Continuous</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Past Perfect" data-transition="slide"><h3>The Past Perfect</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Present Continuous" data-transition="slide"><h3>The Present Continuous</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Present Perfect" data-transition="slide"><h3>The Present Perfect</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Present Perfect continuous" data-transition="slide"><h3>The Present Perfect continuous</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Simple Past" data-transition="slide"><h3>The Simple Past</h3><p>Verb Tenses</p></a></li>
+				<li reference="Verb Tenses"><a href="#level-video" point-to="The Simple Present Tense" data-transition="slide"><h3>The Simple Present Tense</h3><p>Verb Tenses</p></a></li>
+				<li reference="Word"><a href="#level-video" point-to="Word Building" data-transition="slide"><h3>Word Building</h3><p>Word</p></a></li>
+				<li reference="Word"><a href="#level-video" point-to="Word Order" data-transition="slide"><h3>Word Order</h3><p>Word</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Matemática Básica" data-transition="slide"><h3>Matemática Básica</h3><p>Álgebra</p></a></li>
+				<li reference="Álgebra"><a href="#level-video" point-to="Outros" data-transition="slide"><h3>Outros</h3><p>Álgebra</p></a></li>
+				<li reference="Brasil"><a href="#level-video" point-to="Era Vargas" data-transition="slide"><h3>Era Vargas</h3><p>Brasil</p></a></li>
+				<li reference="Geral"><a href="#level-video" point-to="História Antiga" data-transition="slide"><h3>História Antiga</h3><p>Geral</p></a></li>
+				<li reference="Geografia Básica"><a href="#level-video" point-to="Cartografia" data-transition="slide"><h3>Cartografia</h3><p>Geografia Básica</p></a></li>
+			</ul>
+						
+		</div>
+		<div data-role="footer" data-theme="d" data-position="fixed">
+			<h4>Vídeo APP</h4>
+		</div>
+	</div>
+
+	<div data-role="page" id="level-video" data-theme="d">
+		<div data-role="header">
+			<a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-transition="slide">Voltar</a>
+			<h1>Aprendizado Coletivo</h1>
+		</div>
+		<div data-role="content">
+			
+			<ul data-role="listview">				
+			</ul>
+			
+		</div>
+		<div data-role="footer" data-theme="d" data-position="fixed">
+			<h4>Vídeo APP</h4>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="phonegap.js"></script>
+</body>
+</html>
