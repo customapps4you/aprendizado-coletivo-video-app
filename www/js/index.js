@@ -9,7 +9,7 @@ function filter_categories(event){
 	
 	var reference = event.currentTarget.getAttribute('point-to');	
 	
-	var categoryArray = [				'<li reference="Biologia"><a href="#level-sub-category" point-to="Bioqu&iacute;mica" data-transition="slide"><h3>Bioqu&iacute;mica</h3><p>Biologia</p></a></li>',
+	var categoryArray = [				'<li reference="Biologia"><a href="#level-sub-category" point-to="Bioqu&iacute;mica" data-transition="slide"><img src="./img/3(736).jpg"><h3>Bioqu&iacute;mica</h3><p>Biologia</p></a></li>',
 	                    				'<li reference="Biologia"><a href="#level-sub-category" point-to="Bot&acirc;nica" data-transition="slide"><h3>Bot&acirc;nica</h3><p>Biologia</p></a></li>',
 	                    				'<li reference="Biologia"><a href="#level-sub-category" point-to="Citologia" data-transition="slide"><h3>Citologia</h3><p>Biologia</p></a></li>',
 	                    				'<li reference="Biologia"><a href="#level-sub-category" point-to="Divis&atilde;o Celular" data-transition="slide"><h3>Divis&atilde;o Celular</h3><p>Biologia</p></a></li>',
